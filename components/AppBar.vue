@@ -1,4 +1,9 @@
 <template>
+<header>
+  <div
+      class="container-fluid ins-container-132"
+      style="background: white"
+    >
   <div class="container menu-container">
     <div class="menu-items" >
       <h3
@@ -1299,33 +1304,25 @@
       </h3>
     </div>
   </div>
+  </div>
+</header>
 </template>
-
 <script>
 
 export default {
-  components: {
-    
-  },
+  components: {},
   computed: {},
   props: {},
   methods: {
     OpenDropdown(event) {
-      var Target = event.target;
-      Target.classList.add("hover");
+      var Target = event.target
+      Target.classList.add('hover')
     },
     CloseDropdown(event) {
-      var Target = event.target;
-      Target.classList.remove("hover");
-    },
-    loginTime(event) {
-      var Target = event.target;
-      return Target.parentElement.classList.contains("hover");
+      var Target = event.target
+      Target.classList.remove('hover')
     },
   },
-};
+}
 </script>
-
-<style scoped>
-
 </style>

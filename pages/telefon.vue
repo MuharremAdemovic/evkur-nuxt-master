@@ -1,7758 +1,3052 @@
 <template>
-  <section class="breadcrumb-section">
-    <div class="container">
-      <a href="/ana-sayfa" class="breadcrumb-item"> Ana Sayfa </a>
-
-      <h1 class="breadcrumb-item">
-        Telefon (<span class="product-count">281</span>)
-      </h1>
-    </div>
-    <div id="product-list" class="container">
-      <div class="filter-container" data-productcount="85">
-        <a href="javascript:void(0)" class="filter-close-icon mobile">
-          <span></span>
-        </a>
-        <form
-          action="/"
-          ajaxcallname="filterProductList"
-          class="validate product-list-filter-form"
-          method="post"
-          novalidate="novalidate"
-        >
-          <div class="filter">
-            <div class="filter-title">ALT KATEGORİLER</div>
-            <div class="filter-items">
-              <div class="filter-item">
-                <a href="/samsung-cep-telefonlari"> Samsung </a>
-              </div>
-              <div class="filter-item">
-                <a href="/realmi-cep-telefonlari"> Realme </a>
-              </div>
-              <div class="filter-item">
-                <a href="/trident-2"> Trident </a>
-              </div>
-              <div class="filter-item">
-                <a href="/oppo-cep-telefonlari"> Oppo </a>
-              </div>
-              <div class="filter-item">
-                <a href="/xiaomi-cep-telefonlari"> Xiaomi </a>
-              </div>
-              <div class="filter-item">
-                <a href="/huawei-cep-telefonlari"> Huawei </a>
-              </div>
-              <div class="filter-item">
-                <a href="/alcatel-cep-telefonlari"> Alcatel </a>
-              </div>
-              <div class="filter-item">
-                <a href="/tcl-cep-telefonlari"> TCL </a>
-              </div>
+  <div id="product-list" class="container">
+    <div class="filter-container" data-productcount="278">
+      <a href="javascript:void(0)" class="filter-close-icon mobile">
+        <span></span>
+      </a>
+      <form
+        action="/"
+        ajaxcallname="filterProductList"
+        class="validate product-list-filter-form"
+        method="post"
+        novalidate="novalidate"
+      >
+        <div class="filter">
+          <div class="filter-title">ALT KATEGORİLER</div>
+          <div class="filter-items">
+            <div class="filter-item">
+              <a href="/cep-telefonlari"> Cep Telefonları </a>
+            </div>
+            <div class="filter-item">
+              <a href="/giyilebilir-aksesuarlar"> Giyilebilir Teknoloji </a>
+            </div>
+            <div class="filter-item">
+              <a href="/tasinabilir-sarj-cihazlari">
+                Taşınabilir Şarj Cihazları
+              </a>
+            </div>
+            <div class="filter-item">
+              <a href="/tasinabilir-ve-bluetoothlu-hoparlorler">
+                Taşınabilir Bluetoothlu Hoparlörler
+              </a>
+            </div>
+            <div class="filter-item">
+              <a href="/sarj-aletleri-ve-kablolar">
+                Şarj Aletleri ve Kablolar
+              </a>
+            </div>
+            <div class="filter-item">
+              <a href="/kiliflar-ve-ekran-koruyucular">
+                Kılıflar ve Ekran Koruyucular
+              </a>
+            </div>
+            <div class="filter-item">
+              <a href="/hafiza-kartlari-2"> Hafıza Kartları </a>
+            </div>
+            <div class="filter-item">
+              <a href="/kulakliklar-3"> Kulaklıklar </a>
+            </div>
+            <div class="filter-item">
+              <a href="/gimbal-sabitleyiciler"> Gimbal / Sabitleyiciler </a>
             </div>
           </div>
-          <div class="filter specification-filter">
-            <div class="filter-title">Marka</div>
-            <div class="filter-items">
-              <div class="filter-item">
-                <input type="checkbox" id="spec-1069-1264" value="1264" />
-                <label for="spec-1069-1264">
-                  Samsung
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="spec-1069-5822" value="5822" />
-                <label for="spec-1069-5822">
-                  Huaweı
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="spec-1069-31663" value="31663" />
-                <label for="spec-1069-31663">
-                  Xıaomı
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="spec-1069-39948" value="39948" />
-                <label for="spec-1069-39948">
-                  Oppo
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="spec-1069-1772" value="1772" />
-                <label for="spec-1069-1772">
-                  Alcatel
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1069-43809" value="43809" />
-                <label for="spec-1069-43809">
-                  Tcl
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1069-44816" value="44816" />
-                <label for="spec-1069-44816">
-                  Realme
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1069-1276" value="1276" />
-                <label for="spec-1069-1276">
-                  Trident
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-hide-item">
-                <span> Daha fazla göster </span>
-                <span> Daha az göster </span>
-              </div>
-            </div>
-          </div>
-          <div class="filter specification-filter">
-            <div class="filter-title">Model</div>
-            <div class="filter-items">
-              <div class="filter-item">
-                <input type="checkbox" id="spec-1284-27921" value="27921" />
-                <label for="spec-1284-27921">
-                  A52
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="spec-1284-42723" value="42723" />
-                <label for="spec-1284-42723">
-                  Galaxy Note 10 (N970)
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="spec-1284-43658" value="43658" />
-                <label for="spec-1284-43658">
-                  Redmi Note 8 Pro
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="spec-1284-44885" value="44885" />
-                <label for="spec-1284-44885">
-                  Galaxy S20 Ultra (G988B)
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="spec-1284-44892" value="44892" />
-                <label for="spec-1284-44892">
-                  Galaxy S20+ (G985F)
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1284-44898" value="44898" />
-                <label for="spec-1284-44898">
-                  Galaxy S20 (G980F)
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1284-46225" value="46225" />
-                <label for="spec-1284-46225">
-                  Redmi Note 9 Pro
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1284-46241" value="46241" />
-                <label for="spec-1284-46241">
-                  6
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1284-46254" value="46254" />
-                <label for="spec-1284-46254">
-                  Galaxy A31 (A315F)
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1284-46270" value="46270" />
-                <label for="spec-1284-46270">
-                  Galaxy A21s (A215F)
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1284-46301" value="46301" />
-                <label for="spec-1284-46301">
-                  Galaxy Z Flip (F700F)
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1284-46309" value="46309" />
-                <label for="spec-1284-46309">
-                  Galaxy A11 (A115F)
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1284-46315" value="46315" />
-                <label for="spec-1284-46315">
-                  Reno 3
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1284-46430" value="46430" />
-                <label for="spec-1284-46430">
-                  Redmi Note 9
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1284-46454" value="46454" />
-                <label for="spec-1284-46454">
-                  Mi Note 10 Lite
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1284-46526" value="46526" />
-                <label for="spec-1284-46526">
-                  10L
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1284-46543" value="46543" />
-                <label for="spec-1284-46543">
-                  P40 Pro
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1284-46548" value="46548" />
-                <label for="spec-1284-46548">
-                  P Smart S
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1284-46781" value="46781" />
-                <label for="spec-1284-46781">
-                  Galaxy Note 20 Ultra (N985)
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1284-46791" value="46791" />
-                <label for="spec-1284-46791">
-                  Y6P
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1284-46832" value="46832" />
-                <label for="spec-1284-46832">
-                  P40
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1284-46935" value="46935" />
-                <label for="spec-1284-46935">
-                  3X 2020
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1284-47011" value="47011" />
-                <label for="spec-1284-47011">
-                  Redmi Note 9S
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1284-47186" value="47186" />
-                <label for="spec-1284-47186">
-                  Galaxy Z Fold2 (F916B)
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1284-47192" value="47192" />
-                <label for="spec-1284-47192">
-                  Reno 4 Pro
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1284-47193" value="47193" />
-                <label for="spec-1284-47193">
-                  A31
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1284-47196" value="47196" />
-                <label for="spec-1284-47196">
-                  A72
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1284-47198" value="47198" />
-                <label for="spec-1284-47198">
-                  A91
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1284-47202" value="47202" />
-                <label for="spec-1284-47202">
-                  Reno 4 Lite
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1284-47203" value="47203" />
-                <label for="spec-1284-47203">
-                  Reno 4
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1284-47451" value="47451" />
-                <label for="spec-1284-47451">
-                  A23 Max
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1284-47459" value="47459" />
-                <label for="spec-1284-47459">
-                  P Smart 2021
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1284-47534" value="47534" />
-                <label for="spec-1284-47534">
-                  A53 Pro
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-1284-47902" value="47902" />
-                <label for="spec-1284-47902">
-                  A24
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-hide-item">
-                <span> Daha fazla göster </span>
-                <span> Daha az göster </span>
-              </div>
-            </div>
-          </div>
-          <div class="filter specification-filter">
-            <div class="filter-title">Ekran Boyutu (İnç)</div>
-            <div class="filter-items">
-              <div class="filter-item">
-                <input type="checkbox" id="spec-1919-8834" value="8834" />
-                <label for="spec-1919-8834">
-                  6"-7"
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="spec-1919-41910" value="41910" />
-                <label for="spec-1919-41910">
-                  7"-8"
-                  <span>KALDIR</span>
-                </label>
-              </div>
-            </div>
-          </div>
-          <div class="filter specification-filter">
-            <div class="filter-title">Ekran Tipi</div>
-            <div class="filter-items">
-              <div class="filter-item">
-                <input type="checkbox" id="spec-52-1673" value="1673" />
-                <label for="spec-52-1673">
-                  AMOLED
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="spec-52-1676" value="1676" />
-                <label for="spec-52-1676">
-                  TFT LCD
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="spec-52-3650" value="3650" />
-                <label for="spec-52-3650">
-                  IPS LCD
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="spec-52-7706" value="7706" />
-                <label for="spec-52-7706">
-                  Super AMOLED
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="spec-52-22206" value="22206" />
-                <label for="spec-52-22206">
-                  FULL HD
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-52-22426" value="22426" />
-                <label for="spec-52-22426">
-                  HD+
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-52-29063" value="29063" />
-                <label for="spec-52-29063">
-                  OLED
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-52-39771" value="39771" />
-                <label for="spec-52-39771">
-                  FULL HD+
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-52-40276" value="40276" />
-                <label for="spec-52-40276">
-                  Dynamic AMOLED
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-52-41913" value="41913" />
-                <label for="spec-52-41913">
-                  Dinamik AMOLED
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-52-44887" value="44887" />
-                <label for="spec-52-44887">
-                  Dinamik AMOLED 2X
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-hide-item">
-                <span> Daha fazla göster </span>
-                <span> Daha az göster </span>
-              </div>
-            </div>
-          </div>
-          <div class="filter specification-filter">
-            <div class="filter-title">Bellek (RAM)</div>
-            <div class="filter-items">
-              <div class="filter-item">
-                <input type="checkbox" id="spec-9-59" value="59" />
-                <label for="spec-9-59">
-                  2 GB
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="spec-9-7740" value="7740" />
-                <label for="spec-9-7740">
-                  3 GB
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="spec-9-52" value="52" />
-                <label for="spec-9-52">
-                  4 GB
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="spec-9-1248" value="1248" />
-                <label for="spec-9-1248">
-                  6 GB
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="spec-9-1244" value="1244" />
-                <label for="spec-9-1244">
-                  8 GB
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-9-9012" value="9012" />
-                <label for="spec-9-9012">
-                  12 GB
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-hide-item">
-                <span> Daha fazla göster </span>
-                <span> Daha az göster </span>
-              </div>
-            </div>
-          </div>
-          <div class="filter specification-filter">
-            <div class="filter-title">Kamera</div>
-            <div class="filter-items">
-              <div class="filter-item">
-                <input type="checkbox" id="spec-13-36440" value="36440" />
-                <label for="spec-13-36440">
-                  12 MP+12 MP
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="spec-13-41466" value="41466" />
-                <label for="spec-13-41466">
-                  48 MP+8 MP+2 MP
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="spec-13-41915" value="41915" />
-                <label for="spec-13-41915">
-                  12 MP+16 MP+12 MP
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="spec-13-43231" value="43231" />
-                <label for="spec-13-43231">
-                  12 MP+8 MP+2 MP+2 MP
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="spec-13-43341" value="43341" />
-                <label for="spec-13-43341">
-                  48 MP+8 MP+2 MP+2 MP
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-13-43661" value="43661" />
-                <label for="spec-13-43661">
-                  64 MP+8 MP+2 MP+2 MP
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-13-44889" value="44889" />
-                <label for="spec-13-44889">
-                  12 MP+108 MP+48 MP
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-13-44893" value="44893" />
-                <label for="spec-13-44893">
-                  12 MP+12 MP+64 MP
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-13-45225" value="45225" />
-                <label for="spec-13-45225">
-                  13MP+2MP+5MP
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-13-46228" value="46228" />
-                <label for="spec-13-46228">
-                  64 MP+8 MP+5 MP+2 MP
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-13-46256" value="46256" />
-                <label for="spec-13-46256">
-                  48 MP+5 MP+8 MP+5 MP
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-13-46319" value="46319" />
-                <label for="spec-13-46319">
-                  48 MP+13 MP+8 MP+2 MP
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-13-46456" value="46456" />
-                <label for="spec-13-46456">
-                  64 MP+8 MP+2 MP+5 MP
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-13-46547" value="46547" />
-                <label for="spec-13-46547">
-                  50MP+12MP+40MP
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-13-46785" value="46785" />
-                <label for="spec-13-46785">
-                  12MP+108MP+12MP
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-13-46792" value="46792" />
-                <label for="spec-13-46792">
-                  13MP+5MP+2MP
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-13-46834" value="46834" />
-                <label for="spec-13-46834">
-                  50MP+16MP+8MP
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-13-46942" value="46942" />
-                <label for="spec-13-46942">
-                  48 MP+5 MP+2 MP+2 MP
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-13-47012" value="47012" />
-                <label for="spec-13-47012">
-                  48 MP+8 MP+5 MP+2 MP
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-13-47190" value="47190" />
-                <label for="spec-13-47190">
-                  12MP+12MP+12MP
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-13-47195" value="47195" />
-                <label for="spec-13-47195">
-                  12MP+2MP+2MP
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-13-47453" value="47453" />
-                <label for="spec-13-47453">
-                  8MP+16MP
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-hide-item">
-                <span> Daha fazla göster </span>
-                <span> Daha az göster </span>
-              </div>
-            </div>
-          </div>
-          <div class="filter specification-filter">
-            <div class="filter-title">Çift Sim</div>
-            <div class="filter-items">
-              <div class="filter-item">
-                <input type="checkbox" id="spec-54-167" value="167" />
-                <label for="spec-54-167">
-                  Var
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="spec-54-168" value="168" />
-                <label for="spec-54-168">
-                  Yok
-                  <span>KALDIR</span>
-                </label>
-              </div>
-            </div>
-          </div>
-          <div class="filter specification-filter">
-            <div class="filter-title">Depolama</div>
-            <div class="filter-items">
-              <div class="filter-item">
-                <input type="checkbox" id="spec-10-1483" value="1483" />
-                <label for="spec-10-1483">
-                  128 GB
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="spec-10-7534" value="7534" />
-                <label for="spec-10-7534">
-                  32 GB
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="spec-10-7563" value="7563" />
-                <label for="spec-10-7563">
-                  64 GB
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="spec-10-23083" value="23083" />
-                <label for="spec-10-23083">
-                  256 GB
-                  <span>KALDIR</span>
-                </label>
-              </div>
-            </div>
-          </div>
-          <div class="filter specification-filter">
-            <div class="filter-title">Renk</div>
-            <div class="filter-items">
-              <div class="filter-item">
-                <input type="checkbox" id="spec-19-38" value="38" />
-                <label for="spec-19-38">
-                  Siyah
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="spec-19-1527" value="1527" />
-                <label for="spec-19-1527">
-                  Mavi
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="spec-19-2172" value="2172" />
-                <label for="spec-19-2172">
-                  Beyaz
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="spec-19-2667" value="2667" />
-                <label for="spec-19-2667">
-                  Gri
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input type="checkbox" id="spec-19-3021" value="3021" />
-                <label for="spec-19-3021">
-                  Pembe
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-19-3134" value="3134" />
-                <label for="spec-19-3134">
-                  Mor
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-19-3290" value="3290" />
-                <label for="spec-19-3290">
-                  Yeşil
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-19-17925" value="17925" />
-                <label for="spec-19-17925">
-                  Parlak Siyah
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-19-31134" value="31134" />
-                <label for="spec-19-31134">
-                  Bronz
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-19-42727" value="42727" />
-                <label for="spec-19-42727">
-                  Duman Siyahı
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-19-42728" value="42728" />
-                <label for="spec-19-42728">
-                  Ay Tozu Grisi
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-19-46242" value="46242" />
-                <label for="spec-19-46242">
-                  Yıldız Beyazı
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-19-46305" value="46305" />
-                <label for="spec-19-46305">
-                  Parlak Mor
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item filter-item-hideable">
-                <input type="checkbox" id="spec-19-47229" value="47229" />
-                <label for="spec-19-47229">
-                  Yıldızlı Gece
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-hide-item">
-                <span> Daha fazla göster </span>
-                <span> Daha az göster </span>
-              </div>
-            </div>
-          </div>
-          <div class="filter price-filter">
-            <div class="filter-title">FİYAT</div>
-            <div class="filter-items">
-              <div class="filter-item">
-                <input
-                  type="checkbox"
-                  id="price-2000-2499"
-                  data-min="2000"
-                  data-max="2499"
-                />
-                <label for="price-2000-2499">
-                  2000 - 2499 TL
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input
-                  type="checkbox"
-                  id="price-2500-2999"
-                  data-min="2500"
-                  data-max="2999"
-                />
-                <label for="price-2500-2999">
-                  2500 - 2999 TL
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input
-                  type="checkbox"
-                  id="price-3000-3499"
-                  data-min="3000"
-                  data-max="3499"
-                />
-                <label for="price-3000-3499">
-                  3000 - 3499 TL
-                  <span>KALDIR</span>
-                </label>
-              </div>
-              <div class="filter-item">
-                <input
-                  type="checkbox"
-                  id="price-3500--1"
-                  data-min="3500"
-                  data-max="-1"
-                />
-                <label for="price-3500--1">
-                  3500 TL ve üstü
-                  <span>KALDIR</span>
-                </label>
-              </div>
-            </div>
-          </div>
-          <input type="hidden" name="languageId" value="1" />
-          <input type="hidden" name="categoryId" value="75" />
-          <input type="hidden" name="manufacturerId" />
-          <input type="hidden" name="url" value="cep-telefonlari" />
-          <input type="hidden" name="searchTerm" value="" />
-          <input
-            type="hidden"
-            id="product-list-filter-price-start-hidden-input"
-            name="priceStart"
-            value="-1"
-          />
-          <input
-            type="hidden"
-            id="product-list-filter-price-end-hidden-input"
-            name="priceEnd"
-            value="-1"
-          />
-          <input
-            type="hidden"
-            id="product-list-filter-manufacturers-hidden-input"
-            name="selectedManufacturerIds"
-            value=""
-          />
-          <input
-            type="hidden"
-            id="product-list-filter-specification-values-hidden-input"
-            name="selectedSpecificationValueIds"
-            value=""
-          />
-          <input
-            type="hidden"
-            id="product-list-filter-order-by-hidden-input"
-            name="orderBy"
-            value="0"
-          />
-        </form>
-      </div>
-      <div class="product-list-container">
-        <div class="seg-reco-wrapper seg-clear">
-          <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-          />
-          <div class="container seg-rec-1-B" id="kategori1-B">
-            <h2>Kategorinin Öne Çıkanları</h2>
-            <div class="slider owl-carousel owl-theme owl-loaded owl-drag">
-              <div class="owl-stage-outer">
-                <div
-                  class="owl-stage"
-                  style="
-                    transform: translate3d(-880px, 0px, 0px);
-                    transition: all 0s ease 0s;
-                    width: 3168px;
-                  "
-                >
-                  <div
-                    class="owl-item cloned"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/xiaomi-redmi-note-9-pro-128gb-yesil-akilli-telefon?_sgm_campaign=scn_87edfb066a000&amp;_sgm_source=205917&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %17
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/xiaomi-redmi-note-pro-04_lj0s4t_500.jpg"
-                            alt=""
-                            src="https://cdn.evkur.com.tr/c/Product/thumbs/xiaomi-redmi-note-pro-04_lj0s4t_500.jpg"
-                            style="opacity: 1"
-                          />
-                        </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Xiaomi Redmi Note 9 Pro 128GB Yeşil Akıllı Telefon
-                          </div>
-
-                          <div class="price">
-                            <span> 3,699<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              4,498<sup>,00</sup> TL
-                            </span>
-                          </div>
-
-                          <div class="rating">
-                            <div class="stars" data-rating="5">
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    class="owl-item cloned"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/oppo-a91-8128-gb-mavi-akilli-telefon?_sgm_campaign=scn_87edfb066a000&amp;_sgm_source=213724&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/a91-mavi-1_jm3z7s_xn41db_500.jpg"
-                            alt=""
-                            src="https://cdn.evkur.com.tr/c/Product/thumbs/a91-mavi-1_jm3z7s_xn41db_500.jpg"
-                            style="opacity: 1"
-                          />
-                        </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Oppo A91 8/128GB Mavi Akıllı Telefon
-                          </div>
-                          <div class="price">
-                            <span> 3,499<sup>,00</sup> TL </span>
-                          </div>
-
-                          <div class="rating">
-                            <div class="stars" data-rating="0">
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    class="owl-item cloned"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/xiaomi-redmi-note-9-128gb-gri-akilli-telefon?_sgm_campaign=scn_87edfb066a000&amp;_sgm_source=207632&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %8
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/xiaomi-redmi-note-9-128gb-016_sr8c1a_500.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Xiaomi Redmi Note 9 128GB Gri Akıllı Telefon
-                          </div>
-
-                          <div class="price">
-                            <span> 3,099<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              3,399<sup>,00</sup> TL
-                            </span>
-                          </div>
-
-                          <div class="rating">
-                            <div class="stars" data-rating="5">
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    class="owl-item cloned"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/xiaomi-redmi-note-9-64gb-yesil-akilli-telefon?_sgm_campaign=scn_87edfb066a000&amp;_sgm_source=207010&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %12
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/xiaomi-redmi-note-9-64gb_fm12ma_500.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Xiaomi Redmi Note 9 64GB Yeşil Akıllı Telefon
-                          </div>
-
-                          <div class="price">
-                            <span> 2,969<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              3,399<sup>,00</sup> TL
-                            </span>
-                          </div>
-
-                          <div class="rating">
-                            <div class="stars" data-rating="5">
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    class="owl-item cloned"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/xiaomi-redmi-note-9s-128gb-beyaz-akilli-telefon?_sgm_campaign=scn_87edfb066a000&amp;_sgm_source=213333&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %5
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/xiaomi-redmi-note-9-s-64-gb-beyaz_w3p0ke_500.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Xiaomi Redmi Note 9S 128GB Beyaz Akıllı Telefon
-                          </div>
-
-                          <div class="price">
-                            <span> 3,499<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              3,699<sup>,00</sup> TL
-                            </span>
-                          </div>
-
-                          <div class="rating">
-                            <div class="stars" data-rating="0">
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    class="owl-item active"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/oppo-reno-4-lite-8128gb-beyaz-akilli-telefon?_sgm_campaign=scn_87edfb066a000&amp;_sgm_source=213728&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %5
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/reno4-lite-beyaz-1_g6xjo1_500.jpg"
-                            alt=""
-                            src="https://cdn.evkur.com.tr/c/Product/thumbs/reno4-lite-beyaz-1_g6xjo1_500.jpg"
-                            style="opacity: 1"
-                          />
-                        </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Oppo Reno 4 Lite 8/128GB Beyaz Akıllı Telefon
-                          </div>
-
-                          <div class="price">
-                            <span> 3,499<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              3,699<sup>,00</sup> TL
-                            </span>
-                          </div>
-
-                          <div class="rating">
-                            <div class="stars" data-rating="5">
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    class="owl-item active"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/xiaomi-redmi-note-9-pro-64gb-mavi--gri-akilli-telefon?_sgm_campaign=scn_87edfb066a000&amp;_sgm_source=213168&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %22
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/xiaomi-redmi-note-9-pro_d8zti2_500.jpg"
-                            alt=""
-                            src="https://cdn.evkur.com.tr/c/Product/thumbs/xiaomi-redmi-note-9-pro_d8zti2_500.jpg"
-                            style="opacity: 1"
-                          />
-                        </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Xiaomi Redmi Note 9 Pro 64GB Mavi - Gri Akıllı
-                            Telefon
-                          </div>
-
-                          <div class="price">
-                            <span> 3,399<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              4,398<sup>,00</sup> TL
-                            </span>
-                          </div>
-
-                          <div class="rating">
-                            <div class="stars" data-rating="0">
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    class="owl-item active"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/huawei-p-smart-2021-128gb-siyah-akilli-telefon?_sgm_campaign=scn_87edfb066a000&amp;_sgm_source=214266&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %8
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/huawei-p-smart-2021-siyah-01_zn7e6r_500.jpg"
-                            alt=""
-                            src="https://cdn.evkur.com.tr/c/Product/thumbs/huawei-p-smart-2021-siyah-01_zn7e6r_500.jpg"
-                            style="opacity: 1"
-                          />
-                        </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Huawei P Smart 2021 128GB Siyah Akıllı Telefon
-                          </div>
-
-                          <div class="price">
-                            <span> 3,199<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              3,499<sup>,00</sup> TL
-                            </span>
-                          </div>
-
-                          <div class="rating">
-                            <div class="stars" data-rating="0">
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    class="owl-item active"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/xiaomi-redmi-note-9-pro-128gb-yesil-akilli-telefon?_sgm_campaign=scn_87edfb066a000&amp;_sgm_source=205917&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %17
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/xiaomi-redmi-note-pro-04_lj0s4t_500.jpg"
-                            alt=""
-                            src="https://cdn.evkur.com.tr/c/Product/thumbs/xiaomi-redmi-note-pro-04_lj0s4t_500.jpg"
-                            style="opacity: 1"
-                          />
-                        </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Xiaomi Redmi Note 9 Pro 128GB Yeşil Akıllı Telefon
-                          </div>
-
-                          <div class="price">
-                            <span> 3,699<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              4,498<sup>,00</sup> TL
-                            </span>
-                          </div>
-
-                          <div class="rating">
-                            <div class="stars" data-rating="5">
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    class="owl-item active"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/oppo-a91-8128-gb-mavi-akilli-telefon?_sgm_campaign=scn_87edfb066a000&amp;_sgm_source=213724&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/a91-mavi-1_jm3z7s_xn41db_500.jpg"
-                            alt=""
-                            src="https://cdn.evkur.com.tr/c/Product/thumbs/a91-mavi-1_jm3z7s_xn41db_500.jpg"
-                            style="opacity: 1"
-                          />
-                        </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Oppo A91 8/128GB Mavi Akıllı Telefon
-                          </div>
-                          <div class="price">
-                            <span> 3,499<sup>,00</sup> TL </span>
-                          </div>
-
-                          <div class="rating">
-                            <div class="stars" data-rating="0">
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    class="owl-item"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/xiaomi-redmi-note-9-128gb-gri-akilli-telefon?_sgm_campaign=scn_87edfb066a000&amp;_sgm_source=207632&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %8
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/xiaomi-redmi-note-9-128gb-016_sr8c1a_500.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Xiaomi Redmi Note 9 128GB Gri Akıllı Telefon
-                          </div>
-
-                          <div class="price">
-                            <span> 3,099<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              3,399<sup>,00</sup> TL
-                            </span>
-                          </div>
-
-                          <div class="rating">
-                            <div class="stars" data-rating="5">
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    class="owl-item"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/xiaomi-redmi-note-9-64gb-yesil-akilli-telefon?_sgm_campaign=scn_87edfb066a000&amp;_sgm_source=207010&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %12
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/xiaomi-redmi-note-9-64gb_fm12ma_500.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Xiaomi Redmi Note 9 64GB Yeşil Akıllı Telefon
-                          </div>
-
-                          <div class="price">
-                            <span> 2,969<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              3,399<sup>,00</sup> TL
-                            </span>
-                          </div>
-
-                          <div class="rating">
-                            <div class="stars" data-rating="5">
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    class="owl-item"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/xiaomi-redmi-note-9s-128gb-beyaz-akilli-telefon?_sgm_campaign=scn_87edfb066a000&amp;_sgm_source=213333&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %5
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/xiaomi-redmi-note-9-s-64-gb-beyaz_w3p0ke_500.jpg"
-                            alt=""
-                          />
-                        </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Xiaomi Redmi Note 9S 128GB Beyaz Akıllı Telefon
-                          </div>
-
-                          <div class="price">
-                            <span> 3,499<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              3,699<sup>,00</sup> TL
-                            </span>
-                          </div>
-
-                          <div class="rating">
-                            <div class="stars" data-rating="0">
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    class="owl-item cloned"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/oppo-reno-4-lite-8128gb-beyaz-akilli-telefon?_sgm_campaign=scn_87edfb066a000&amp;_sgm_source=213728&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %5
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/reno4-lite-beyaz-1_g6xjo1_500.jpg"
-                            alt=""
-                            src="https://cdn.evkur.com.tr/c/Product/thumbs/reno4-lite-beyaz-1_g6xjo1_500.jpg"
-                            style="opacity: 1"
-                          />
-                        </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Oppo Reno 4 Lite 8/128GB Beyaz Akıllı Telefon
-                          </div>
-
-                          <div class="price">
-                            <span> 3,499<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              3,699<sup>,00</sup> TL
-                            </span>
-                          </div>
-
-                          <div class="rating">
-                            <div class="stars" data-rating="5">
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    class="owl-item cloned"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/xiaomi-redmi-note-9-pro-64gb-mavi--gri-akilli-telefon?_sgm_campaign=scn_87edfb066a000&amp;_sgm_source=213168&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %22
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/xiaomi-redmi-note-9-pro_d8zti2_500.jpg"
-                            alt=""
-                            src="https://cdn.evkur.com.tr/c/Product/thumbs/xiaomi-redmi-note-9-pro_d8zti2_500.jpg"
-                            style="opacity: 1"
-                          />
-                        </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Xiaomi Redmi Note 9 Pro 64GB Mavi - Gri Akıllı
-                            Telefon
-                          </div>
-
-                          <div class="price">
-                            <span> 3,399<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              4,398<sup>,00</sup> TL
-                            </span>
-                          </div>
-
-                          <div class="rating">
-                            <div class="stars" data-rating="0">
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    class="owl-item cloned"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/huawei-p-smart-2021-128gb-siyah-akilli-telefon?_sgm_campaign=scn_87edfb066a000&amp;_sgm_source=214266&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %8
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/huawei-p-smart-2021-siyah-01_zn7e6r_500.jpg"
-                            alt=""
-                            src="https://cdn.evkur.com.tr/c/Product/thumbs/huawei-p-smart-2021-siyah-01_zn7e6r_500.jpg"
-                            style="opacity: 1"
-                          />
-                        </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Huawei P Smart 2021 128GB Siyah Akıllı Telefon
-                          </div>
-
-                          <div class="price">
-                            <span> 3,199<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              3,499<sup>,00</sup> TL
-                            </span>
-                          </div>
-
-                          <div class="rating">
-                            <div class="stars" data-rating="0">
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    class="owl-item cloned"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/xiaomi-redmi-note-9-pro-128gb-yesil-akilli-telefon?_sgm_campaign=scn_87edfb066a000&amp;_sgm_source=205917&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %17
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/xiaomi-redmi-note-pro-04_lj0s4t_500.jpg"
-                            alt=""
-                            src="https://cdn.evkur.com.tr/c/Product/thumbs/xiaomi-redmi-note-pro-04_lj0s4t_500.jpg"
-                            style="opacity: 1"
-                          />
-                        </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Xiaomi Redmi Note 9 Pro 128GB Yeşil Akıllı Telefon
-                          </div>
-
-                          <div class="price">
-                            <span> 3,699<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              4,498<sup>,00</sup> TL
-                            </span>
-                          </div>
-
-                          <div class="rating">
-                            <div class="stars" data-rating="5">
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    class="owl-item cloned"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/oppo-a91-8128-gb-mavi-akilli-telefon?_sgm_campaign=scn_87edfb066a000&amp;_sgm_source=213724&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/a91-mavi-1_jm3z7s_xn41db_500.jpg"
-                            alt=""
-                            src="https://cdn.evkur.com.tr/c/Product/thumbs/a91-mavi-1_jm3z7s_xn41db_500.jpg"
-                            style="opacity: 1"
-                          />
-                        </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Oppo A91 8/128GB Mavi Akıllı Telefon
-                          </div>
-                          <div class="price">
-                            <span> 3,499<sup>,00</sup> TL </span>
-                          </div>
-
-                          <div class="rating">
-                            <div class="stars" data-rating="0">
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="owl-nav">
-                <button type="button" role="presentation" class="owl-prev">
-                  <i class="fa fa-chevron-left"></i></button
-                ><button type="button" role="presentation" class="owl-next">
-                  <i class="fa fa-chevron-right"></i>
-                </button>
-              </div>
-              <div class="owl-dots">
-                <button role="button" class="owl-dot active">
-                  <span></span></button
-                ><button role="button" class="owl-dot"><span></span></button>
-              </div>
-            </div>
-          </div>
-
-          <style>
-            #kategori1-B .owl-next {
-              background-color: unset;
-            }
-            #kategori1-B .owl-prev {
-              background-color: unset;
-            }
-
-            #kategori1-B i.fa.fa-chevron-right {
-              top: 175px;
-              right: -15px;
-              background-color: #ffffff;
-              /*border: 2px solid;*/
-              padding: 5px;
-              border-radius: 5px;
-              color: red;
-              font-size: 28px;
-            }
-
-            #kategori1-B i.fa.fa-chevron-left {
-              top: 175px;
-              left: -15px;
-              background-color: #ffffff;
-              /*border: 2px solid;*/
-              padding: 5px;
-              border-radius: 5px;
-              color: red;
-              font-size: 28px;
-            }
-            #kategori1-B .slider {
-              margin-top: 0.05rem;
-            }
-            #kategori1-B {
-              padding-bottom: 15px;
-            }
-            #kategori1-B h2 {
-              font-size: 20px !important;
-              text-transform: uppercase;
-              font-family: "Proxima";
-              text-align: center;
-              color: #555555;
-            }
-            #kategori1-B .name {
-              display: -webkit-box;
-              -webkit-line-clamp: 3;
-              -webkit-box-orient: vertical;
-              overflow: hidden;
-            }
-
-            #kategori1-B span.old-price {
-              text-decoration: line-through;
-            }
-
-            #kategori1-B .slider .item-info .price {
-              width: auto !important;
-            }
-            #kategori1-B .slider .item-info .rating {
-              width: 100% !important;
-              text-align: right;
-            }
-            #kategori1-B .price span:not(.old-price) {
-              font-size: 0.14rem;
-            }
-            #kategori1-B .price span:not(.old-price) sup {
-              font-size: 0.1rem;
-            }
-            #kategori1-B .price span.old-price {
-              font-size: 0.12rem;
-            }
-            #kategori1-B .price span.old-price sup {
-              font-size: 0.08rem;
-            }
-
-            @media only screen and (max-width: 800px) {
-              #kategori1-B button.owl-prev {
-                margin-left: -9px;
-                margin-top: -59px;
-              }
-              #kategori1-B button.owl-next {
-                margin-right: -9px;
-                margin-top: -59px;
-              }
-              #kategori1-B h2 {
-                font-size: 16px !important;
-                text-transform: uppercase;
-                padding-top: 10px;
-                font-family: "Proxima";
-                text-align: center;
-                color: #555555;
-              }
-              #kategori1-B .price span:not(.old-price) {
-                font-size: 0.45rem;
-              }
-              #kategori1-B .price span:not(.old-price) sup {
-                font-size: 0.28rem;
-              }
-              #kategori1-B .price span.old-price {
-                font-size: 0.35rem;
-                display: unset;
-              }
-              #kategori1-B .price span.old-price sup {
-                font-size: 0.25rem;
-              }
-              #kategori1-B .rating {
-                margin-top: 0.3rem;
-              }
-              #kategori1-B .rating .stars {
-                float: left;
-              }
-              #kategori1-B .item-image .discount-info {
-                width: 42px;
-                height: 30px;
-                margin-right: -28px;
-              }
-              #kategori1-B .item-image .discount-info span {
-                font-size: 9px;
-              }
-            }
-          </style>
         </div>
-        <div class="product-list-filter">
-          <div class="product-layout-type type-1">
-            <span> GÖSTERİM: </span>
-            <img
-              class="type-1"
-              src="/Content/Icons/layout-type-1.png"
-              data-type="type-1"
-            />
-            <img
-              class="type-1-active"
-              src="/Content/Icons/layout-type-1-active.png"
-            />
-            <img
-              class="type-2"
-              src="/Content/Icons/layout-type-2.png"
-              data-type="type-2"
-            />
-            <img
-              class="type-2-active"
-              src="/Content/Icons/layout-type-2-active.png"
-            />
+        <div class="filter specification-filter">
+          <div class="filter-title">Marka</div>
+          <div class="filter-items">
+            <div class="filter-item">
+              <input type="checkbox" id="spec-1069-1264" value="1264" />
+              <label for="spec-1069-1264">
+                Samsung
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item">
+              <input type="checkbox" id="spec-1069-5822" value="5822" />
+              <label for="spec-1069-5822">
+                Huaweı
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item">
+              <input type="checkbox" id="spec-1069-31663" value="31663" />
+              <label for="spec-1069-31663">
+                Xıaomı
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item">
+              <input type="checkbox" id="spec-1069-1265" value="1265" />
+              <label for="spec-1069-1265">
+                Lg
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item">
+              <input type="checkbox" id="spec-1069-39948" value="39948" />
+              <label for="spec-1069-39948">
+                Oppo
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-1069-1772" value="1772" />
+              <label for="spec-1069-1772">
+                Alcatel
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-1069-5895" value="5895" />
+              <label for="spec-1069-5895">
+                Phılıps
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-1069-5960" value="5960" />
+              <label for="spec-1069-5960">
+                Ttec
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-1069-7652" value="7652" />
+              <label for="spec-1069-7652">
+                Thıncase
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-1069-26641" value="26641" />
+              <label for="spec-1069-26641">
+                Woon
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-1069-27448" value="27448" />
+              <label for="spec-1069-27448">
+                Vestel
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-1069-37159" value="37159" />
+              <label for="spec-1069-37159">
+                Djı
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-1069-37183" value="37183" />
+              <label for="spec-1069-37183">
+                Zhıyun
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-1069-43809" value="43809" />
+              <label for="spec-1069-43809">
+                Tcl
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-1069-44816" value="44816" />
+              <label for="spec-1069-44816">
+                Realme
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-1069-44876" value="44876" />
+              <label for="spec-1069-44876">
+                Mojue
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-1069-45023" value="45023" />
+              <label for="spec-1069-45023">
+                Defunc
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-1069-45259" value="45259" />
+              <label for="spec-1069-45259">
+                Akg
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-1069-1276" value="1276" />
+              <label for="spec-1069-1276">
+                Trident
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-hide-item">
+              <span> Daha fazla göster </span>
+              <span> Daha az göster </span>
+            </div>
           </div>
-          <div class="product-sort">
-            <span> SIRALAMA: </span>
-            <div class="product-sort-select">
-              <select
-                data-select2-id="1"
-                tabindex="-1"
-                class="select2-hidden-accessible"
-                aria-hidden="true"
-              >
-                <option value="0" selected="selected" data-select2-id="3">
-                  Sizin için seçilenler
-                </option>
-                <option value="20">Fiyata göre artan</option>
-                <option value="10">Fiyata göre azalan</option>
-                <option value="30">A'dan Z'ye</option>
-                <option value="40">Z'den A'ya</option></select
-              ><span
-                class="select2 select2-container select2-container--default"
-                dir="ltr"
-                data-select2-id="2"
-                style="width: 100%"
-                ><span class="selection"
+        </div>
+        <div class="filter specification-filter">
+          <div class="filter-title">Ürün Çeşidi</div>
+          <div class="filter-items">
+            <div class="filter-item">
+              <input type="checkbox" id="spec-1144-8835" value="8835" />
+              <label for="spec-1144-8835">
+                Ekran Koruyucular
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item">
+              <input type="checkbox" id="spec-1144-8837" value="8837" />
+              <label for="spec-1144-8837">
+                Kulaklıklar
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item">
+              <input type="checkbox" id="spec-1144-8838" value="8838" />
+              <label for="spec-1144-8838">
+                Telefon Kılıfları
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item">
+              <input type="checkbox" id="spec-1144-8840" value="8840" />
+              <label for="spec-1144-8840">
+                Hoparlörler
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item">
+              <input type="checkbox" id="spec-1144-23715" value="23715" />
+              <label for="spec-1144-23715">
+                Hafıza Kartları
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-1144-26175" value="26175" />
+              <label for="spec-1144-26175">
+                Kulaklık
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-1144-34502" value="34502" />
+              <label for="spec-1144-34502">
+                Powerbank
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-1144-34711" value="34711" />
+              <label for="spec-1144-34711">
+                Gimbal
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-1144-35610" value="35610" />
+              <label for="spec-1144-35610">
+                Şarj Cihazı
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-1144-35614" value="35614" />
+              <label for="spec-1144-35614">
+                Şarj Standı
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-1144-36108" value="36108" />
+              <label for="spec-1144-36108">
+                Akıllı Bileklik
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-1144-36484" value="36484" />
+              <label for="spec-1144-36484">
+                Usb Type C
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-1144-36693" value="36693" />
+              <label for="spec-1144-36693">
+                Hoparlör
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-1144-37024" value="37024" />
+              <label for="spec-1144-37024">
+                Akıllı Saat
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-1144-38800" value="38800" />
+              <label for="spec-1144-38800">
+                Şarj Kablosu
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-1144-39545" value="39545" />
+              <label for="spec-1144-39545">
+                Cep Telefonu
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-1144-42098" value="42098" />
+              <label for="spec-1144-42098">
+                Hızlı Şarj Aleti
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-1144-45670" value="45670" />
+              <label for="spec-1144-45670">
+                Aksesuar Seti
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-1144-47020" value="47020" />
+              <label for="spec-1144-47020">
+                Araç İçi Bluetooth Kulaklıklı Adaptör
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-hide-item">
+              <span> Daha fazla göster </span>
+              <span> Daha az göster </span>
+            </div>
+          </div>
+        </div>
+        <div class="filter specification-filter">
+          <div class="filter-title">Renk</div>
+          <div class="filter-items">
+            <div class="filter-item">
+              <input type="checkbox" id="spec-19-38" value="38" />
+              <label for="spec-19-38">
+                Siyah
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item">
+              <input type="checkbox" id="spec-19-1488" value="1488" />
+              <label for="spec-19-1488">
+                Kırmızı
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item">
+              <input type="checkbox" id="spec-19-1527" value="1527" />
+              <label for="spec-19-1527">
+                Mavi
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item">
+              <input type="checkbox" id="spec-19-2051" value="2051" />
+              <label for="spec-19-2051">
+                Gümüş
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item">
+              <input type="checkbox" id="spec-19-2172" value="2172" />
+              <label for="spec-19-2172">
+                Beyaz
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-19-2305" value="2305" />
+              <label for="spec-19-2305">
+                Sarı
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-19-2509" value="2509" />
+              <label for="spec-19-2509">
+                Turuncu
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-19-2658" value="2658" />
+              <label for="spec-19-2658">
+                Lacivert
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-19-2667" value="2667" />
+              <label for="spec-19-2667">
+                Gri
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-19-3021" value="3021" />
+              <label for="spec-19-3021">
+                Pembe
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-19-3134" value="3134" />
+              <label for="spec-19-3134">
+                Mor
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-19-3290" value="3290" />
+              <label for="spec-19-3290">
+                Yeşil
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-19-8275" value="8275" />
+              <label for="spec-19-8275">
+                Altın Sarısı
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-19-17925" value="17925" />
+              <label for="spec-19-17925">
+                Parlak Siyah
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-19-22155" value="22155" />
+              <label for="spec-19-22155">
+                Renk seçeneği yoktur
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-19-31134" value="31134" />
+              <label for="spec-19-31134">
+                Bronz
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-19-36350" value="36350" />
+              <label for="spec-19-36350">
+                Gece Siyahı
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-19-37579" value="37579" />
+              <label for="spec-19-37579">
+                Antrasit
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-19-40620" value="40620" />
+              <label for="spec-19-40620">
+                Haki Yeşil
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-19-43759" value="43759" />
+              <label for="spec-19-43759">
+                Mat Siyah
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-19-46242" value="46242" />
+              <label for="spec-19-46242">
+                Yıldız Beyazı
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-19-46305" value="46305" />
+              <label for="spec-19-46305">
+                Parlak Mor
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-19-47229" value="47229" />
+              <label for="spec-19-47229">
+                Yıldızlı Gece
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-19-47250" value="47250" />
+              <label for="spec-19-47250">
+                Nebula Grisi
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-19-47253" value="47253" />
+              <label for="spec-19-47253">
+                Grafit Siyahı
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item filter-item-hideable">
+              <input type="checkbox" id="spec-19-47264" value="47264" />
+              <label for="spec-19-47264">
+                Altın
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-hide-item">
+              <span> Daha fazla göster </span>
+              <span> Daha az göster </span>
+            </div>
+          </div>
+        </div>
+        <div class="filter price-filter">
+          <div class="filter-title">FİYAT</div>
+          <div class="filter-items">
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                id="price-0-99"
+                data-min="0"
+                data-max="99"
+              />
+              <label for="price-0-99">
+                0 - 99 TL
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                id="price-100-249"
+                data-min="100"
+                data-max="249"
+              />
+              <label for="price-100-249">
+                100 - 249 TL
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                id="price-250-499"
+                data-min="250"
+                data-max="499"
+              />
+              <label for="price-250-499">
+                250 - 499 TL
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                id="price-500-999"
+                data-min="500"
+                data-max="999"
+              />
+              <label for="price-500-999">
+                500 - 999 TL
+                <span>KALDIR</span>
+              </label>
+            </div>
+            <div class="filter-item">
+              <input
+                type="checkbox"
+                id="price-999--1"
+                data-min="999"
+                data-max="-1"
+              />
+              <label for="price-999--1">
+                999 TL ve üstü
+                <span>KALDIR</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <input type="hidden" name="languageId" value="1" />
+        <input type="hidden" name="categoryId" value="28" />
+        <input type="hidden" name="manufacturerId" />
+        <input type="hidden" name="url" value="telefon" />
+        <input type="hidden" name="searchTerm" value="" />
+        <input
+          type="hidden"
+          id="product-list-filter-price-start-hidden-input"
+          name="priceStart"
+          value="-1"
+        />
+        <input
+          type="hidden"
+          id="product-list-filter-price-end-hidden-input"
+          name="priceEnd"
+          value="-1"
+        />
+        <input
+          type="hidden"
+          id="product-list-filter-manufacturers-hidden-input"
+          name="selectedManufacturerIds"
+          value=""
+        />
+        <input
+          type="hidden"
+          id="product-list-filter-specification-values-hidden-input"
+          name="selectedSpecificationValueIds"
+          value=""
+        />
+        <input
+          type="hidden"
+          id="product-list-filter-order-by-hidden-input"
+          name="orderBy"
+          value="10"
+        />
+      </form>
+    </div>
+    <div class="product-list-container">
+      <div class="product-list-filter">
+        <div class="product-layout-type type-1">
+          <span> GÖSTERİM: </span>
+          <img
+            class="type-1"
+            src="/Content/Icons/layout-type-1.png"
+            data-type="type-1"
+          />
+          <img
+            class="type-1-active"
+            src="/Content/Icons/layout-type-1-active.png"
+          />
+          <img
+            class="type-2"
+            src="/Content/Icons/layout-type-2.png"
+            data-type="type-2"
+          />
+          <img
+            class="type-2-active"
+            src="/Content/Icons/layout-type-2-active.png"
+          />
+        </div>
+        <div class="product-sort">
+          <span> SIRALAMA: </span>
+          <div class="product-sort-select">
+            <select
+              data-select2-id="1"
+              tabindex="-1"
+              class="select2-hidden-accessible"
+              aria-hidden="true"
+            >
+              <option value="0">Sizin için seçilenler</option>
+              <option value="20">Fiyata göre artan</option>
+              <option value="10" selected="selected" data-select2-id="3">
+                Fiyata göre azalan
+              </option>
+              <option value="30">A'dan Z'ye</option>
+              <option value="40">Z'den A'ya</option></select
+            ><span
+              class="select2 select2-container select2-container--default"
+              dir="ltr"
+              data-select2-id="2"
+              style="width: 100%"
+              ><span class="selection"
+                ><span
+                  class="select2-selection select2-selection--single"
+                  role="combobox"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  tabindex="0"
+                  aria-labelledby="select2-0aqr-container"
                   ><span
-                    class="select2-selection select2-selection--single"
-                    role="combobox"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    tabindex="0"
-                    aria-labelledby="select2-io1i-container"
-                    ><span
-                      class="select2-selection__rendered"
-                      id="select2-io1i-container"
-                      role="textbox"
-                      aria-readonly="true"
-                      title="
-                        Sizin için seçilenler
+                    class="select2-selection__rendered"
+                    id="select2-0aqr-container"
+                    role="textbox"
+                    aria-readonly="true"
+                    title="
+                        Fiyata göre azalan
                     "
-                    >
-                      Sizin için seçilenler </span
-                    ><span class="select2-selection__arrow" role="presentation"
-                      ><b role="presentation"></b></span></span></span
-                ><span class="dropdown-wrapper" aria-hidden="true"></span
-              ></span>
-            </div>
+                  >
+                    Fiyata göre azalan </span
+                  ><span class="select2-selection__arrow" role="presentation"
+                    ><b role="presentation"></b></span></span></span
+              ><span class="dropdown-wrapper" aria-hidden="true"></span
+            ></span>
           </div>
         </div>
-        <div class="products">
-          <div class="product">
-            <a
-              href="/samsung-galaxy-s20-plus-128gb-siyah-akilli-telefon-g985f"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/galaxy-s20-plus-siyah-05_b7h0pt_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/samsung-galaxy-s20-plus-128gb-siyah-akilli-telefon-g985f"
-                  class="name multiline-ellipsis"
-                  data-text="Samsung Galaxy S20 Plus 128GB Siyah Akıllı Telefon (G985F) "
-                  >Samsung Galaxy S20 Plus 128GB Siyah Akıllı Telefon...</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/samsung-galaxy-s20-plus-128gb-siyah-akilli-telefon-g985f"
-                  class="price"
-                >
-                  <span class="old-price"> 9,299<sup>,00</sup> TL </span>
-                  <span> 7,969<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a
-                href="/samsung-galaxy-s20-plus-128gb-siyah-akilli-telefon-g985f"
-                class="rating"
+      </div>
+      <div class="products">
+        <div
+          v-for="product in products"
+          :key="'product' + product.id"
+          class="product"
+        >
+          <nuxt-link :to="'/urun-detay/' + product.id" class="image">
+            <img :src="product.image" alt="" />
+          </nuxt-link>
+          <div class="product-content">
+            <h2>
+              <nuxt-link
+                :to="'/urun-detay/' + product.id"
+                class="name multiline-ellipsis"
+                data-text="Samsung Galaxy Z Fold2 256GB Siyah Akıllı Telefon (F916B)"
+                >{{ product.title }}</nuxt-link
               >
-                <div class="stars" data-rating="5">
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %14 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a href="/samsung-n970-galaxy-note-10-duman-siyahi" class="image">
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/galaxy-note10-duman-siyahi_g5khi0_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/samsung-n970-galaxy-note-10-duman-siyahi"
-                  class="name multiline-ellipsis"
-                  data-text="Samsung Galaxy Note 10 256GB Duman Siyahı Akıllı Telefon (N970)"
-                  >Samsung Galaxy Note 10 256GB Duman Siyahı Akıllı...</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/samsung-n970-galaxy-note-10-duman-siyahi"
-                  class="price"
-                >
-                  <span> 7,199<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a
-                href="/samsung-n970-galaxy-note-10-duman-siyahi"
-                class="rating"
-              >
-                <div class="stars" data-rating="0">
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/samsung-galaxy-s20-ultra-128gb-gri-akilli-telefon-g988b"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/sm-galaxy-s20-ultra-gri-04_a6hnn4_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/samsung-galaxy-s20-ultra-128gb-gri-akilli-telefon-g988b"
-                  class="name multiline-ellipsis"
-                  data-text="Samsung Galaxy S20 Ultra 128GB Gri Akıllı Telefon (G988B)"
-                  >Samsung Galaxy S20 Ultra 128GB Gri Akıllı Telefon...</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/samsung-galaxy-s20-ultra-128gb-gri-akilli-telefon-g988b"
-                  class="price"
-                >
-                  <span class="old-price"> 12,499<sup>,00</sup> TL </span>
-                  <span> 10,989<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a
-                href="/samsung-galaxy-s20-ultra-128gb-gri-akilli-telefon-g988b"
-                class="rating"
-              >
-                <div class="stars" data-rating="5">
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %12 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/samsung-galaxy-note-10-256gb-ay-tozu-grisi-akilli-telefon-n970"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/galaxy-note10plus-ay-tozu-grisi-02_e3sqk2_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/samsung-galaxy-note-10-256gb-ay-tozu-grisi-akilli-telefon-n970"
-                  class="name multiline-ellipsis"
-                  data-text="Samsung Galaxy Note 10 256GB Ay Tozu Grisi Akıllı Telefon (N970)"
-                  >Samsung Galaxy Note 10 256GB Ay Tozu Grisi Akıllı...</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/samsung-galaxy-note-10-256gb-ay-tozu-grisi-akilli-telefon-n970"
-                  class="price"
-                >
-                  <span> 7,199<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a
-                href="/samsung-galaxy-note-10-256gb-ay-tozu-grisi-akilli-telefon-n970"
-                class="rating"
-              >
-                <div class="stars" data-rating="0">
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/samsung-galaxy-s20-plus-128gb-mavi-akilli-telefon-g985f"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/galaxy-s20-plus_r1g8mm_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/samsung-galaxy-s20-plus-128gb-mavi-akilli-telefon-g985f"
-                  class="name multiline-ellipsis"
-                  data-text="Samsung Galaxy S20 Plus 128GB Mavi Akıllı Telefon (G985F) "
-                  >Samsung Galaxy S20 Plus 128GB Mavi Akıllı Telefon...</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/samsung-galaxy-s20-plus-128gb-mavi-akilli-telefon-g985f"
-                  class="price"
-                >
-                  <span class="old-price"> 9,299<sup>,00</sup> TL </span>
-                  <span> 7,969<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a
-                href="/samsung-galaxy-s20-plus-128gb-mavi-akilli-telefon-g985f"
-                class="rating"
-              >
-                <div class="stars" data-rating="5">
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %14 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/samsung-galaxy-s20-plus-128gb-gri-akilli-telefon-g985f"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/galaxy-s20-plus-gri_f3g1kz_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/samsung-galaxy-s20-plus-128gb-gri-akilli-telefon-g985f"
-                  class="name multiline-ellipsis"
-                  data-text="Samsung Galaxy S20 Plus 128GB Gri Akıllı Telefon (G985F)"
-                  >Samsung Galaxy S20 Plus 128GB Gri Akıllı Telefon...</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/samsung-galaxy-s20-plus-128gb-gri-akilli-telefon-g985f"
-                  class="price"
-                >
-                  <span class="old-price"> 9,299<sup>,00</sup> TL </span>
-                  <span> 7,969<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a
-                href="/samsung-galaxy-s20-plus-128gb-gri-akilli-telefon-g985f"
-                class="rating"
-              >
-                <div class="stars" data-rating="0">
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %14 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a href="/huawei-p40-pro-256gb-siyah-akilli-telefon" class="image">
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/huawei-p40-pro-03_a3zse1_fb51kj_p9qrm4_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/huawei-p40-pro-256gb-siyah-akilli-telefon"
-                  class="name multiline-ellipsis"
-                  data-text="Huawei P40 Pro 256GB Siyah Akıllı Telefon"
-                  >Huawei P40 Pro 256GB Siyah Akıllı Telefon</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/huawei-p40-pro-256gb-siyah-akilli-telefon"
-                  class="price"
-                >
-                  <span> 9,999<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a
-                href="/huawei-p40-pro-256gb-siyah-akilli-telefon"
-                class="rating"
-              >
-                <div class="stars" data-rating="5">
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/huawei-p-smart-s-128gb-siyah-akilli-telefon"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/huawei-p-smart-s-01_c2haf5_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/huawei-p-smart-s-128gb-siyah-akilli-telefon"
-                  class="name multiline-ellipsis"
-                  data-text="Huawei P Smart S 128GB Siyah Akıllı Telefon"
-                  >Huawei P Smart S 128GB Siyah Akıllı Telefon</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/huawei-p-smart-s-128gb-siyah-akilli-telefon"
-                  class="price"
-                >
-                  <span class="old-price"> 3,499<sup>,00</sup> TL </span>
-                  <span> 2,899<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a
-                href="/huawei-p-smart-s-128gb-siyah-akilli-telefon"
-                class="rating"
-              >
-                <div class="stars" data-rating="5">
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %17 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a href="/huawei-p40-pro-256gb-beyaz-akilli-telefon" class="image">
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/huawei-p40-pro-beyaz_wz95fi_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/huawei-p40-pro-256gb-beyaz-akilli-telefon"
-                  class="name multiline-ellipsis"
-                  data-text="Huawei P40 Pro 256GB Beyaz Akıllı Telefon"
-                  >Huawei P40 Pro 256GB Beyaz Akıllı Telefon</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/huawei-p40-pro-256gb-beyaz-akilli-telefon"
-                  class="price"
-                >
-                  <span> 9,999<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a
-                href="/huawei-p40-pro-256gb-beyaz-akilli-telefon"
-                class="rating"
-              >
-                <div class="stars" data-rating="0">
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a href="/huawei-p40-128gb-beyaz-akilli-telefon" class="image">
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/huawei-p40-beyaz_me98hp_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/huawei-p40-128gb-beyaz-akilli-telefon"
-                  class="name multiline-ellipsis"
-                  data-text="Huawei P40 128GB Beyaz Akıllı Telefon"
-                  >Huawei P40 128GB Beyaz Akıllı Telefon</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a href="/huawei-p40-128gb-beyaz-akilli-telefon" class="price">
-                  <span> 6,999<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a href="/huawei-p40-128gb-beyaz-akilli-telefon" class="rating">
-                <div class="stars" data-rating="0">
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/xiaomi-redmi-note-8-pro-128gb-gri-akilli-telefon"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/redmi-note-8-pro-gri-01_q1l2qe_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/xiaomi-redmi-note-8-pro-128gb-gri-akilli-telefon"
-                  class="name multiline-ellipsis"
-                  data-text="Xiaomi Redmi Note 8 Pro 128GB Gri Akıllı Telefon "
-                  >Xiaomi Redmi Note 8 Pro 128GB Gri Akıllı Telefon
-                </a>
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/xiaomi-redmi-note-8-pro-128gb-gri-akilli-telefon"
-                  class="price"
-                >
-                  <span class="old-price"> 3,899<sup>,00</sup> TL </span>
-                  <span> 3,549<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a
-                href="/xiaomi-redmi-note-8-pro-128gb-gri-akilli-telefon"
-                class="rating"
-              >
-                <div class="stars" data-rating="0">
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %9 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/samsung/samsung-galaxy-a21s-64gb-siyah-akilli-telefon"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/samsung-galaxy-a21s-64gb-cift-sim-siyah1_z0ste7_250.jpeg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/samsung/samsung-galaxy-a21s-64gb-siyah-akilli-telefon"
-                  class="name multiline-ellipsis"
-                  data-text=" Samsung Galaxy A21s 64GB Siyah Akıllı Telefon (A217F)"
-                >
-                  Samsung Galaxy A21s 64GB Siyah Akıllı Telefon (A217F)</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/samsung/samsung-galaxy-a21s-64gb-siyah-akilli-telefon"
-                  class="price"
-                >
-                  <span class="old-price"> 2,999<sup>,00</sup> TL </span>
-                  <span> 2,799<sup>,00</sup> TL </span>
-                </a>
-                <a
-                  href="/samsung/samsung-galaxy-a21s-64gb-siyah-akilli-telefon"
-                  class="campaign-info"
-                >
-                  574<sup>,83</sup> TL 'den başlayan taksitlerle
-                </a>
-              </div>
-              <a
-                href="/samsung/samsung-galaxy-a21s-64gb-siyah-akilli-telefon"
-                class="rating"
-              >
-                <div class="stars" data-rating="0">
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %7 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/xiaomi-redmi-note-8-pro-64gb-gri-akilli-telefon"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/redmi-note-8-pro-gri-01_w9b1nt_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/xiaomi-redmi-note-8-pro-64gb-gri-akilli-telefon"
-                  class="name multiline-ellipsis"
-                  data-text="Xiaomi Redmi Note 8 Pro 64GB Gri Akıllı Telefon"
-                  >Xiaomi Redmi Note 8 Pro 64GB Gri Akıllı Telefon</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/xiaomi-redmi-note-8-pro-64gb-gri-akilli-telefon"
-                  class="price"
-                >
-                  <span class="old-price"> 3,599<sup>,00</sup> TL </span>
-                  <span> 3,259<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a
-                href="/xiaomi-redmi-note-8-pro-64gb-gri-akilli-telefon"
-                class="rating"
-              >
-                <div class="stars" data-rating="5">
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %9 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/xiaomi-redmi-note-8-pro-64gb-yesil-akilli-telefon"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/redmi-note-8-pro-yesil-01_y5pmf1_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/xiaomi-redmi-note-8-pro-64gb-yesil-akilli-telefon"
-                  class="name multiline-ellipsis"
-                  data-text="Xiaomi Redmi Note 8 Pro 64GB Yeşil Akıllı Telefon"
-                  >Xiaomi Redmi Note 8 Pro 64GB Yeşil Akıllı Telefon</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/xiaomi-redmi-note-8-pro-64gb-yesil-akilli-telefon"
-                  class="price"
-                >
-                  <span class="old-price"> 3,599<sup>,00</sup> TL </span>
-                  <span> 3,259<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a
-                href="/xiaomi-redmi-note-8-pro-64gb-yesil-akilli-telefon"
-                class="rating"
-              >
-                <div class="stars" data-rating="5">
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %9 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/xiaomi-redmi-note-8-pro-64gb-mavi-akilli-telefon"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/xiaomi-redmi-note-8-pro-mavi_q6wjx4_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/xiaomi-redmi-note-8-pro-64gb-mavi-akilli-telefon"
-                  class="name multiline-ellipsis"
-                  data-text="Xiaomi Redmi Note 8 Pro 64GB Mavi Akıllı Telefon"
-                  >Xiaomi Redmi Note 8 Pro 64GB Mavi Akıllı Telefon</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/xiaomi-redmi-note-8-pro-64gb-mavi-akilli-telefon"
-                  class="price"
-                >
-                  <span class="old-price"> 3,599<sup>,00</sup> TL </span>
-                  <span> 3,259<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a
-                href="/xiaomi-redmi-note-8-pro-64gb-mavi-akilli-telefon"
-                class="rating"
-              >
-                <div class="stars" data-rating="5">
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %9 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a href="/tcl-10l-64gb-beyaz-akilli-telefon-t770h" class="image">
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/tcl-10l-mavi-telefon-01_p3l2kn_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/tcl-10l-64gb-beyaz-akilli-telefon-t770h"
-                  class="name multiline-ellipsis"
-                  data-text="Tcl 10L 64GB Beyaz Akıllı Telefon (T770H)"
-                  >Tcl 10L 64GB Beyaz Akıllı Telefon (T770H)</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/tcl-10l-64gb-beyaz-akilli-telefon-t770h"
-                  class="price"
-                >
-                  <span> 2,849<sup>,00</sup> TL </span>
-                </a>
-                <a
-                  href="/tcl-10l-64gb-beyaz-akilli-telefon-t770h"
-                  class="campaign-info"
-                >
-                  516<sup>,50</sup> TL 'den başlayan taksitlerle
-                </a>
-              </div>
-              <a href="/tcl-10l-64gb-beyaz-akilli-telefon-t770h" class="rating">
-                <div class="stars" data-rating="0">
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/xiaomi-redmi-note-8-pro-128gb-yesil-akilli-telefon"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/redmi-note-8-pro-yesil-01_y5pmf1_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/xiaomi-redmi-note-8-pro-128gb-yesil-akilli-telefon"
-                  class="name multiline-ellipsis"
-                  data-text="Xiaomi Redmi Note 8 Pro 128GB Yeşil Akıllı Telefon"
-                  >Xiaomi Redmi Note 8 Pro 128GB Yeşil Akıllı Telefon</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/xiaomi-redmi-note-8-pro-128gb-yesil-akilli-telefon"
-                  class="price"
-                >
-                  <span class="old-price"> 3,899<sup>,00</sup> TL </span>
-                  <span> 3,549<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a
-                href="/xiaomi-redmi-note-8-pro-128gb-yesil-akilli-telefon"
-                class="rating"
-              >
-                <div class="stars" data-rating="4">
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %9 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/samsung-galaxy-s20-ultra-128gb-gri-akilli-telefon-g988b-2"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/sm-galaxy-s20-ultra-siyah_pq8m5k_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/samsung-galaxy-s20-ultra-128gb-gri-akilli-telefon-g988b-2"
-                  class="name multiline-ellipsis"
-                  data-text="Samsung Galaxy S20 Ultra 128GB Siyah Akıllı Telefon (G988B) "
-                  >Samsung Galaxy S20 Ultra 128GB Siyah Akıllı Telefon...</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/samsung-galaxy-s20-ultra-128gb-gri-akilli-telefon-g988b-2"
-                  class="price"
-                >
-                  <span class="old-price"> 12,499<sup>,00</sup> TL </span>
-                  <span> 10,989<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a
-                href="/samsung-galaxy-s20-ultra-128gb-gri-akilli-telefon-g988b-2"
-                class="rating"
-              >
-                <div class="stars" data-rating="0">
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %12 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/samsung-galaxy-s20-128gb-mavi-akilli-telefon-g985f"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/galaxy-s20_y3k5mx_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/samsung-galaxy-s20-128gb-mavi-akilli-telefon-g985f"
-                  class="name multiline-ellipsis"
-                  data-text="Samsung Galaxy S20 128GB Mavi Akıllı Telefon (G980F)"
-                  >Samsung Galaxy S20 128GB Mavi Akıllı Telefon (G980F)</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/samsung-galaxy-s20-128gb-mavi-akilli-telefon-g985f"
-                  class="price"
-                >
-                  <span class="old-price"> 7,429<sup>,00</sup> TL </span>
-                  <span> 6,999<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a
-                href="/samsung-galaxy-s20-128gb-mavi-akilli-telefon-g985f"
-                class="rating"
-              >
-                <div class="stars" data-rating="0">
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %6 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/samsung-galaxy-s20-128gb-gri-akilli-telefon-g985f"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/galaxy-s20-gri-01_k4m6cr_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/samsung-galaxy-s20-128gb-gri-akilli-telefon-g985f"
-                  class="name multiline-ellipsis"
-                  data-text="Samsung Galaxy S20 128GB Gri Akıllı Telefon (G980F)"
-                  >Samsung Galaxy S20 128GB Gri Akıllı Telefon (G980F)</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/samsung-galaxy-s20-128gb-gri-akilli-telefon-g985f"
-                  class="price"
-                >
-                  <span class="old-price"> 7,429<sup>,00</sup> TL </span>
-                  <span> 6,999<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a
-                href="/samsung-galaxy-s20-128gb-gri-akilli-telefon-g985f"
-                class="rating"
-              >
-                <div class="stars" data-rating="5">
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %6 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/samsung-galaxy-s20-128gb-pembe-akilli-telefon-g985f"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/galaxy-s20-pembe-01_rq3r9w_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/samsung-galaxy-s20-128gb-pembe-akilli-telefon-g985f"
-                  class="name multiline-ellipsis"
-                  data-text="Samsung Galaxy S20 128GB Pembe Akıllı Telefon (G980F)"
-                  >Samsung Galaxy S20 128GB Pembe Akıllı Telefon (G980F)</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/samsung-galaxy-s20-128gb-pembe-akilli-telefon-g985f"
-                  class="price"
-                >
-                  <span class="old-price"> 7,429<sup>,00</sup> TL </span>
-                  <span> 6,999<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a
-                href="/samsung-galaxy-s20-128gb-pembe-akilli-telefon-g985f"
-                class="rating"
-              >
-                <div class="stars" data-rating="0">
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %6 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/xiaomi-redmi-note-9-pro-128gb-yesil-akilli-telefon"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/xiaomi-redmi-note-pro-04_lj0s4t_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/xiaomi-redmi-note-9-pro-128gb-yesil-akilli-telefon"
-                  class="name multiline-ellipsis"
-                  data-text="Xiaomi Redmi Note 9 Pro 128GB Yeşil Akıllı Telefon"
-                  >Xiaomi Redmi Note 9 Pro 128GB Yeşil Akıllı Telefon</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/xiaomi-redmi-note-9-pro-128gb-yesil-akilli-telefon"
-                  class="price"
-                >
-                  <span class="old-price"> 4,498<sup>,00</sup> TL </span>
-                  <span> 3,699<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a
-                href="/xiaomi-redmi-note-9-pro-128gb-yesil-akilli-telefon"
-                class="rating"
-              >
-                <div class="stars" data-rating="5">
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %18 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/realme-6-128gb-yildiz-beyazi-akilli-telefon"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/realme-6-yildiz-beyazi_z9y1fk_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/realme-6-128gb-yildiz-beyazi-akilli-telefon"
-                  class="name multiline-ellipsis"
-                  data-text="Realme 6 128GB Yıldız Beyazı Akıllı Telefon"
-                  >Realme 6 128GB Yıldız Beyazı Akıllı Telefon</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/realme-6-128gb-yildiz-beyazi-akilli-telefon"
-                  class="price"
-                >
-                  <span class="old-price"> 3,499<sup>,00</sup> TL </span>
-                  <span> 2,999<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a
-                href="/realme-6-128gb-yildiz-beyazi-akilli-telefon"
-                class="rating"
-              >
-                <div class="stars" data-rating="5">
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %14 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/samsung-galaxy-a31-128gb-siyah-akilli-telefon-a315f"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/galaxy-a31-siyah_as4c3b_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/samsung-galaxy-a31-128gb-siyah-akilli-telefon-a315f"
-                  class="name multiline-ellipsis"
-                  data-text="Samsung Galaxy A31 128GB Siyah Akıllı Telefon (A315F)"
-                  >Samsung Galaxy A31 128GB Siyah Akıllı Telefon (A315F)</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/samsung-galaxy-a31-128gb-siyah-akilli-telefon-a315f"
-                  class="price"
-                >
-                  <span class="old-price"> 3,599<sup>,00</sup> TL </span>
-                  <span> 3,099<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a
-                href="/samsung-galaxy-a31-128gb-siyah-akilli-telefon-a315f"
-                class="rating"
-              >
-                <div class="stars" data-rating="5">
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %14 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/samsung-galaxy-a31-128gb-beyaz-akilli-telefon-a315f"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/galaxy-a31-beyaz_f2mwo3_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/samsung-galaxy-a31-128gb-beyaz-akilli-telefon-a315f"
-                  class="name multiline-ellipsis"
-                  data-text="Samsung Galaxy A31 128GB Beyaz Akıllı Telefon (A315F)"
-                  >Samsung Galaxy A31 128GB Beyaz Akıllı Telefon (A315F)</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/samsung-galaxy-a31-128gb-beyaz-akilli-telefon-a315f"
-                  class="price"
-                >
-                  <span class="old-price"> 3,599<sup>,00</sup> TL </span>
-                  <span> 3,099<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a
-                href="/samsung-galaxy-a31-128gb-beyaz-akilli-telefon-a315f"
-                class="rating"
-              >
-                <div class="stars" data-rating="0">
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %14 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/samsung-galaxy-a21s-64gb-mavi-akilli-telefon-a215f"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/galaxy-a21s_ww84bq_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/samsung-galaxy-a21s-64gb-mavi-akilli-telefon-a215f"
-                  class="name multiline-ellipsis"
-                  data-text="Samsung Galaxy A21s 64GB Mavi Akıllı Telefon (A217F)"
-                  >Samsung Galaxy A21s 64GB Mavi Akıllı Telefon (A217F)</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/samsung-galaxy-a21s-64gb-mavi-akilli-telefon-a215f"
-                  class="price"
-                >
-                  <span class="old-price"> 2,999<sup>,00</sup> TL </span>
-                  <span> 2,799<sup>,00</sup> TL </span>
-                </a>
-                <a
-                  href="/samsung-galaxy-a21s-64gb-mavi-akilli-telefon-a215f"
-                  class="campaign-info"
-                >
-                  574<sup>,83</sup> TL 'den başlayan taksitlerle
-                </a>
-              </div>
-              <a
-                href="/samsung-galaxy-a21s-64gb-mavi-akilli-telefon-a215f"
-                class="rating"
-              >
-                <div class="stars" data-rating="0">
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %7 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/samsung-galaxy-a31-128gb-mavi-akilli-telefon-a315f"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/galaxy-a31-mavi-01_r8b2kq_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/samsung-galaxy-a31-128gb-mavi-akilli-telefon-a315f"
-                  class="name multiline-ellipsis"
-                  data-text="Samsung Galaxy A31 128GB Mavi Akıllı Telefon (A315F)"
-                  >Samsung Galaxy A31 128GB Mavi Akıllı Telefon (A315F)</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/samsung-galaxy-a31-128gb-mavi-akilli-telefon-a315f"
-                  class="price"
-                >
-                  <span class="old-price"> 3,599<sup>,00</sup> TL </span>
-                  <span> 3,099<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a
-                href="/samsung-galaxy-a31-128gb-mavi-akilli-telefon-a315f"
-                class="rating"
-              >
-                <div class="stars" data-rating="0">
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %14 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/samsung-galaxy-z-flip-256gb-parlak-siyah-akilli-telefon-f700f"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/galaxy-z-flip-parlak-siyah_kw82cf_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/samsung-galaxy-z-flip-256gb-parlak-siyah-akilli-telefon-f700f"
-                  class="name multiline-ellipsis"
-                  data-text="Samsung Galaxy Z Flip 256GB Parlak Siyah Akıllı Telefon (F700F)"
-                  >Samsung Galaxy Z Flip 256GB Parlak Siyah Akıllı Telefon...</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/samsung-galaxy-z-flip-256gb-parlak-siyah-akilli-telefon-f700f"
-                  class="price"
-                >
-                  <span class="old-price"> 14,199<sup>,00</sup> TL </span>
-                  <span> 12,999<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a
-                href="/samsung-galaxy-z-flip-256gb-parlak-siyah-akilli-telefon-f700f"
-                class="rating"
-              >
-                <div class="stars" data-rating="0">
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %8 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/samsung-galaxy-z-flip-256gb-parlak-mor-akilli-telefon-f700f"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/galaxy-z-flip-parlak-mor-01_c8j3ww_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/samsung-galaxy-z-flip-256gb-parlak-mor-akilli-telefon-f700f"
-                  class="name multiline-ellipsis"
-                  data-text="Samsung Galaxy Z Flip 256GB Parlak Mor Akıllı Telefon (F700F)"
-                  >Samsung Galaxy Z Flip 256GB Parlak Mor Akıllı Telefon...</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/samsung-galaxy-z-flip-256gb-parlak-mor-akilli-telefon-f700f"
-                  class="price"
-                >
-                  <span class="old-price"> 14,199<sup>,00</sup> TL </span>
-                  <span> 12,999<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a
-                href="/samsung-galaxy-z-flip-256gb-parlak-mor-akilli-telefon-f700f"
-                class="rating"
-              >
-                <div class="stars" data-rating="0">
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %8 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/samsung-galaxy-a11-32gb-siyah-akilli-telefon-a115f"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/galaxy-a11-siyah_pe2w0f_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/samsung-galaxy-a11-32gb-siyah-akilli-telefon-a115f"
-                  class="name multiline-ellipsis"
-                  data-text="Samsung Galaxy A11 32GB Siyah Akıllı Telefon (A115F)"
-                  >Samsung Galaxy A11 32GB Siyah Akıllı Telefon (A115F)</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/samsung-galaxy-a11-32gb-siyah-akilli-telefon-a115f"
-                  class="price"
-                >
-                  <span class="old-price"> 2,799<sup>,00</sup> TL </span>
-                  <span> 2,499<sup>,00</sup> TL </span>
-                </a>
-                <a
-                  href="/samsung-galaxy-a11-32gb-siyah-akilli-telefon-a115f"
-                  class="campaign-info"
-                >
-                  491<sup>,50</sup> TL 'den başlayan taksitlerle
-                </a>
-              </div>
-              <a
-                href="/samsung-galaxy-a11-32gb-siyah-akilli-telefon-a115f"
-                class="rating"
-              >
-                <div class="stars" data-rating="5">
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %11 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/samsung-galaxy-a11-32gb-mavi-akilli-telefon-a115f"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/galaxy-a11-mavi_f0bai3_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/samsung-galaxy-a11-32gb-mavi-akilli-telefon-a115f"
-                  class="name multiline-ellipsis"
-                  data-text="Samsung Galaxy A11 32GB Mavi Akıllı Telefon (A115F)"
-                  >Samsung Galaxy A11 32GB Mavi Akıllı Telefon (A115F)</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/samsung-galaxy-a11-32gb-mavi-akilli-telefon-a115f"
-                  class="price"
-                >
-                  <span class="old-price"> 2,799<sup>,00</sup> TL </span>
-                  <span> 2,499<sup>,00</sup> TL </span>
-                </a>
-                <a
-                  href="/samsung-galaxy-a11-32gb-mavi-akilli-telefon-a115f"
-                  class="campaign-info"
-                >
-                  491<sup>,50</sup> TL 'den başlayan taksitlerle
-                </a>
-              </div>
-              <a
-                href="/samsung-galaxy-a11-32gb-mavi-akilli-telefon-a115f"
-                class="rating"
-              >
-                <div class="stars" data-rating="5">
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %11 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/samsung-galaxy-a11-32gb-beyaz-akilli-telefon-a115f"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/galaxy-a11-beyaz_mw6e4l_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/samsung-galaxy-a11-32gb-beyaz-akilli-telefon-a115f"
-                  class="name multiline-ellipsis"
-                  data-text="Samsung Galaxy A11 32GB Beyaz Akıllı Telefon (A115F)"
-                  >Samsung Galaxy A11 32GB Beyaz Akıllı Telefon (A115F)</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/samsung-galaxy-a11-32gb-beyaz-akilli-telefon-a115f"
-                  class="price"
-                >
-                  <span class="old-price"> 2,799<sup>,00</sup> TL </span>
-                  <span> 2,499<sup>,00</sup> TL </span>
-                </a>
-                <a
-                  href="/samsung-galaxy-a11-32gb-beyaz-akilli-telefon-a115f"
-                  class="campaign-info"
-                >
-                  491<sup>,50</sup> TL 'den başlayan taksitlerle
-                </a>
-              </div>
-              <a
-                href="/samsung-galaxy-a11-32gb-beyaz-akilli-telefon-a115f"
-                class="rating"
-              >
-                <div class="stars" data-rating="0">
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %11 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a href="/oppo-reno-3-128gb-siyahi-akilli-telefon" class="image">
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/oppo-reno-3-128-gb-siyah_tc5w3w_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/oppo-reno-3-128gb-siyahi-akilli-telefon"
-                  class="name multiline-ellipsis"
-                  data-text="Oppo Reno 3 128GB Siyahı Akıllı Telefon"
-                  >Oppo Reno 3 128GB Siyahı Akıllı Telefon</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/oppo-reno-3-128gb-siyahi-akilli-telefon"
-                  class="price"
-                >
-                  <span class="old-price"> 3,999<sup>,00</sup> TL </span>
-                  <span> 3,599<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a href="/oppo-reno-3-128gb-siyahi-akilli-telefon" class="rating">
-                <div class="stars" data-rating="0">
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %10 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a href="/oppo-reno-3-128gb-mavi-akilli-telefon" class="image">
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/oppo-reno-3-128-gb-mavi_tg2x8d_co20fy_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/oppo-reno-3-128gb-mavi-akilli-telefon"
-                  class="name multiline-ellipsis"
-                  data-text="Oppo Reno 3 128GB Mavi Akıllı Telefon"
-                  >Oppo Reno 3 128GB Mavi Akıllı Telefon</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a href="/oppo-reno-3-128gb-mavi-akilli-telefon" class="price">
-                  <span class="old-price"> 3,999<sup>,00</sup> TL </span>
-                  <span> 3,599<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a href="/oppo-reno-3-128gb-mavi-akilli-telefon" class="rating">
-                <div class="stars" data-rating="0">
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %10 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a href="/samsung-a217f-galaxy-a21s-beyaz" class="image">
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/samsung-galaxy-a21s-64gb-cift-sim-beyaz1_qm02do_250.jpeg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/samsung-a217f-galaxy-a21s-beyaz"
-                  class="name multiline-ellipsis"
-                  data-text="Samsung Galaxy A21s 64GB Beyaz Akıllı Telefon (A217F)"
-                  >Samsung Galaxy A21s 64GB Beyaz Akıllı Telefon (A217F)</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a href="/samsung-a217f-galaxy-a21s-beyaz" class="price">
-                  <span class="old-price"> 2,999<sup>,00</sup> TL </span>
-                  <span> 2,799<sup>,00</sup> TL </span>
-                </a>
-                <a
-                  href="/samsung-a217f-galaxy-a21s-beyaz"
-                  class="campaign-info"
-                >
-                  574<sup>,83</sup> TL 'den başlayan taksitlerle
-                </a>
-              </div>
-              <a href="/samsung-a217f-galaxy-a21s-beyaz" class="rating">
-                <div class="stars" data-rating="4">
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %7 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/xiaomi-redmi-note-9-64gb-yesil-akilli-telefon"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/xiaomi-redmi-note-9-64gb_fm12ma_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/xiaomi-redmi-note-9-64gb-yesil-akilli-telefon"
-                  class="name multiline-ellipsis"
-                  data-text="Xiaomi Redmi Note 9 64GB Yeşil Akıllı Telefon"
-                  >Xiaomi Redmi Note 9 64GB Yeşil Akıllı Telefon</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/xiaomi-redmi-note-9-64gb-yesil-akilli-telefon"
-                  class="price"
-                >
-                  <span class="old-price"> 3,399<sup>,00</sup> TL </span>
-                  <span> 2,969<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a
-                href="/xiaomi-redmi-note-9-64gb-yesil-akilli-telefon"
-                class="rating"
-              >
-                <div class="stars" data-rating="5">
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star active">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %13 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/xiaomi-redmi-note-9-64gb-gri-akilli-telefon"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/xiaomi-redmi-note-9-64gb_gq75fy_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/xiaomi-redmi-note-9-64gb-gri-akilli-telefon"
-                  class="name multiline-ellipsis"
-                  data-text="Xiaomi Redmi Note 9 64GB Gri Akıllı Telefon"
-                  >Xiaomi Redmi Note 9 64GB Gri Akıllı Telefon</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/xiaomi-redmi-note-9-64gb-gri-akilli-telefon"
-                  class="price"
-                >
-                  <span class="old-price"> 3,399<sup>,00</sup> TL </span>
-                  <span> 2,969<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a
-                href="/xiaomi-redmi-note-9-64gb-gri-akilli-telefon"
-                class="rating"
-              >
-                <div class="stars" data-rating="0">
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %13 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/xiaomi-mi-note-10-lite-64gb-siyah-akilli-telefon"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/xiaomi-mi-note-10-lite-64gb_ai30sx_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/xiaomi-mi-note-10-lite-64gb-siyah-akilli-telefon"
-                  class="name multiline-ellipsis"
-                  data-text="Xiaomi Mi Note 10 Lite 64GB Siyah Akıllı Telefon"
-                  >Xiaomi Mi Note 10 Lite 64GB Siyah Akıllı Telefon</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/xiaomi-mi-note-10-lite-64gb-siyah-akilli-telefon"
-                  class="price"
-                >
-                  <span class="old-price"> 4,399<sup>,00</sup> TL </span>
-                  <span> 3,999<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a
-                href="/xiaomi-mi-note-10-lite-64gb-siyah-akilli-telefon"
-                class="rating"
-              >
-                <div class="stars" data-rating="0">
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %9 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/xiaomi-mi-note-10-lite-64gb-mor-akilli-telefon"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/xiaomi-mi-note-10-lite-64gb-mor-02_q0f5po_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/xiaomi-mi-note-10-lite-64gb-mor-akilli-telefon"
-                  class="name multiline-ellipsis"
-                  data-text="Xiaomi Mi Note 10 Lite 64GB Mor Akıllı Telefon"
-                  >Xiaomi Mi Note 10 Lite 64GB Mor Akıllı Telefon</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/xiaomi-mi-note-10-lite-64gb-mor-akilli-telefon"
-                  class="price"
-                >
-                  <span class="old-price"> 4,399<sup>,00</sup> TL </span>
-                  <span> 3,999<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a
-                href="/xiaomi-mi-note-10-lite-64gb-mor-akilli-telefon"
-                class="rating"
-              >
-                <div class="stars" data-rating="0">
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %9 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="product">
-            <a
-              href="/xiaomi-mi-note-10-lite-64gb-beyaz-akilli-telefon"
-              class="image"
-            >
-              <img
-                src="https://cdn.evkur.com.tr/c/Product/thumbs/xiaomi-mi-note-10-lite-64gb-beyaz-02_w2gyq5_250.jpg"
-                alt=""
-              />
-            </a>
-            <div class="product-content">
-              <h2>
-                <a
-                  href="/xiaomi-mi-note-10-lite-64gb-beyaz-akilli-telefon"
-                  class="name multiline-ellipsis"
-                  data-text="Xiaomi Mi Note 10 Lite 64GB Beyaz Akıllı Telefon"
-                  >Xiaomi Mi Note 10 Lite 64GB Beyaz Akıllı Telefon</a
-                >
-              </h2>
-              <div class="product-mobile-wrapper">
-                <a
-                  href="/xiaomi-mi-note-10-lite-64gb-beyaz-akilli-telefon"
-                  class="price"
-                >
-                  <span class="old-price"> 4,399<sup>,00</sup> TL </span>
-                  <span> 3,999<sup>,00</sup> TL </span>
-                </a>
-              </div>
-              <a
-                href="/xiaomi-mi-note-10-lite-64gb-beyaz-akilli-telefon"
-                class="rating"
-              >
-                <div class="stars" data-rating="0">
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                  <div class="star">
-                    <img src="/Content/Icons/star-icon.png" />
-                    <img
-                      class="active"
-                      src="/Content/Icons/active-star-icon.png"
-                    />
-                  </div>
-                </div>
-
-                <div class="discount-info vcenter">
-                  <span> %9 İNDİRİM </span>
-                </div>
-                <div class="button red">
-                  <span>ÜRÜNE GİT</span>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="paging">
-          <a href="javascript:void(0)" class="vcenter active">
-            <span> 1 </span>
-          </a>
-          <a href="/cep-telefonlari?ajax=true&amp;pageNumber=2" class="vcenter">
-            <span> 2 </span>
-          </a>
-          <a href="/cep-telefonlari?ajax=true&amp;pageNumber=3" class="vcenter">
-            <span> 3 </span>
-          </a>
-          <a href="/cep-telefonlari?ajax=true&amp;pageNumber=2" class="vcenter">
-            <span> &gt; </span>
-          </a>
-          <a href="/cep-telefonlari?ajax=true&amp;pageNumber=3" class="vcenter">
-            <span> &gt;&gt; </span>
-          </a>
-        </div>
-        <a href="javascript:void(0)" class="filter-icon mobile"> FİLTRELE </a>
-        <div class="category-text">
-          <div class="category-text-title">
-            Uygun Fiyatlı ve Kaliteli Cep Telefonları
-          </div>
-          <div class="category-text-summary">
-            <h2
-              style="
-                text-align: justify;
-                font-size: 12px;
-                margin-top: 6px !important;
-              "
-            >
-              <strong>Cep Telefonu</strong>
             </h2>
-            <p style="text-align: justify">
-              Cep teledonları, en çok kullandığımız teknolojik cihazlardan
-              biridir. Gittiğimiz her yere götürebildiğimiz bu akıllı cihazlar
-              iletişim kurmamızı çok daha kolaylaştırdığı ve bir yere bağlı
-              olmaktan kurtardığı için bu küçük alete olan ilgi giderek
-              artmaktadır. Yapılan araştırmalardan edinilen istatistiki
-              sonuçlara göre düya nüfusunun büyük bir kısmı cep telefonu
-              kullanmaktadır.
-            </p>
-          </div>
-          <div class="category-text-all">
-            <h2
-              style="
-                text-align: justify;
-                font-size: 12px;
-                margin-top: 6px !important;
-              "
-            >
-              <strong>Cep Telefonu</strong>
-            </h2>
-            <p style="text-align: justify">
-              Cep teledonları, en çok kullandığımız teknolojik cihazlardan
-              biridir. Gittiğimiz her yere götürebildiğimiz bu akıllı cihazlar
-              iletişim kurmamızı çok daha kolaylaştırdığı ve bir yere bağlı
-              olmaktan kurtardığı için bu küçük alete olan ilgi giderek
-              artmaktadır. Yapılan araştırmalardan edinilen istatistiki
-              sonuçlara göre düya nüfusunun büyük bir kısmı cep telefonu
-              kullanmaktadır. Sayıları milyarları bulan cep telefonları, sektöre
-              giren üretici firma sayısının artmasıyla model ve çeşt bakımından
-              zenginleşmiş ve küresel ölçülerde dev bir pazarın oluşmasını
-              sağlamıştır. Bu küresel pazardaki telefon modeli o kadar çoktur ki
-              isteyen herkes kendi bütçesine göre bir telefon modeli
-              bulabilmektedir. Satın almak için bu kadar çok çeşidin olması
-              karar vermenizi biraz zorlaştırabilir.
-              <span style="text-decoration: underline"
-                >Cep telefonu satın alırken dikkat etmeniz gereken önemli birkaç
-                detay var.</span
-              >
-              Öncelikle, ihtiyacınız ne ve daha çok ne için kullanacaksınız?
-              Eğer bu sorularınızın cevaplarını bilirseniz, ihtiyacınız olan cep
-              telefonunu daha kolay belirleyip satın alabilirsiniz. Sadece
-              ihtiyacınızı belirlemeniz yeterli. Uygun modeli belirledikten
-              sonra <strong>taksitle cep telefonu almak</strong> için
-              başvurunuzu kolayca yapabilirsiniz.
-            </p>
-            <h3 style="text-align: justify; font-size: 12px">
-              <strong>Cep Telefonu İşletim Sistemi</strong>
-            </h3>
-            <p style="text-align: justify">
-              Türkiye genellemesine göre en çok kullanılan, tercih edilen cep
-              telefonu işletim sistemi, "Android, iOS"tur. Sizin için en uygun
-              cep telefonu modellerini www.evkur.com.tr'de bulabileceksiniz.
-            </p>
-            <p style="text-align: justify; font-size: 12px">
-              <strong>Cep Telefonu Alırken İşletim Sistemi Tercihi</strong>
-            </p>
-            <p style="text-align: justify">
-              <strong>Android İşletim Sistemi :</strong> Google ve Open Handset
-              Alliance tarafından, mobil cihazlar için geliştirilmekte olan,
-              Linux tabanlı özgür ve ücretsiz bir işletim sistemidir. Genel
-              olarak, kullanımı ve tasarımının kolay olması nedeniyle oldukça
-              tercih edilen bir işletim sistemidir. Türkiye genelinde çoğunluk
-              olarak tercih edildiğini söyleyebiliriz. Ekstra uygulama yüklemek,
-              telefonunuzda var olan fotoğraf, müzik gibi dosyalara bilgisayar
-              üzerinden erişim daha kolaydır.
-            </p>
-            <p style="text-align: justify">
-              <strong>iOS İşletim Sistemi :</strong> Sadece Apple ürünleri için
-              geçerli bir işletim sistemidir. Apple için uygulamalara kendi
-              uygulama marketi olan "App Store" üzerinden erişim sağlanabilir.
-              Bazı uygulamaları için ödeme alınabilmektedir. iOS işletim
-              sistemli ürününüzü bilgisayara bağladığınızda da ürününüzdeki
-              içeriklere direkt erişim sağlamanız da biraz zor olabilmektedir.
-              Kendi masaüstü tasarımı olan Itunes'u kullanmanız gerekmektedir.
-            </p>
-            <h3 style="text-align: justify; font-size: 12px">
-              <strong>Cep Telefonu Markaları</strong>
-            </h3>
-            <p style="text-align: justify">
-              Samsung, LG, HUAWEI, OPPO, XIAOMI, Alcatel, REALME, TCL ve daha
-              birçok marka mevcut. Bunlar, cep telefonu alırken en çok tercih
-              edilen ve göz önünde bulundurulan markalardır. Telefon alışverişi
-              yaparken herhangi bir tercih önceliğiniz yok ise güvenilir bir
-              marka olmasına dikkat edin.
-              <strong>Cep telefonu fiyatları</strong> seçilen modele göre bazen
-              yüksek olabilmekte. Bozulduğu zaman yenisini almak
-              istemeyebilirsiniz. Bu yüzden yaşadığınız yerde yetkili servisinin
-              olup olmadığını araştırın. EVKUR'dan dünya markası
-              <span style="text-decoration: underline"
-                >cep telefonlarını orijinal resmi ürün garantisi ile</span
-              >
-              satın alabilirsiniz. <strong>Taksitle cep telefonu</strong> satın
-              almak için sipariş vermeniz yeterli.
-            </p>
-            <p style="text-align: justify">
-              <strong>Kullanıcılar İçin Cep Telefonu Markaları</strong>
-            </p>
-            <p style="text-align: justify">
-              Günümüzde kullanıcılar ikiye ayrıldı diyebiliriz. iOS ve Android
-              sevenler. iOS'a alıştıysanız android kullanmanız biraz zor
-              olabilir, Android'e alıştıysanız iOS'u kullanırken
-              zorlanabilirsiniz. İki işletim sistemi için de oldukçe geniş bir
-              geliştirici kitlesi blunmaktadır. Telefonunuz ister Android olsun
-              isterse iOS olsun zevkinize ve ihtiyacınıza göre bir uygulama
-              mutlaka bulabiliyorsunuz. Sizin zevkinize ve kullanım
-              alışkanlıklarınıza uygun olan bir işletim sistemini ve bu sistemle
-              çalışan bir telefonu tercih etmeniz daha doğru olacaktır. Hem
-              sizin için hem de telefonunuzu uzun süre kullanabilmeniz için
-              önemli.
-            </p>
-            <h3 style="text-align: justify; font-size: 12px">
-              <strong>Cep Telefonunun Ömrünü Uzatma</strong>
-            </h3>
-            <p style="text-align: justify">
-              Cep telefonunuzu dikkatli ve bilinçli kullanmanız hizmet süresini
-              uzatacaktır. Hijyenik kullanımı, bataryasının uzun ömürlü olması,
-              sağında solunda herhangi bir çizik veya zararın olmaması için
-              elinizden geleni yaparsanız, telefonunuzu daha uzun süre
-              kullanabilirsiniz.Cep telefonunuzun temizliği için özel olarak
-              tasarlanmış bezlerden temin satın alabilirsiniz. Mutlaka,
-              telefoncularda bulunabilen ürünlerdir.
-            </p>
-            <p style="text-align: justify">
-              Bataryasının daha dayanıklı olması içinde telefonu satın
-              aldığınızda kutudan çıktığı haliyle kullanmalı, içinde var olan
-              şarjı tüketip, tamamen sıfırlandığında şarja takmalısınız. Sonraki
-              kullanımlarınızda da bunu göz önünde bulundurmalısınız. Bataryada
-              depolanan enerji sıfırlanmadan tekrar şarja bağlanmamalı ve
-              şarjdayken telefon kullanılmamalıdır. Bu bataryanızın ömrünü
-              uzatacaktır.
-            </p>
-            <a href="javascript:void(0)" class="see-all">Özeti Göster</a>
+            <div class="product-mobile-wrapper">
+              <nuxt-link :to="'/urun-detay/' + product.id" class="price">
+                <span> {{ product.price }} TL </span>
+              </nuxt-link>
+            </div>
+            <nuxt-link :to="'/urun-detay/' + product.id" class="rating">
+              <div class="stars" data-rating="0">
+                <div class="star">
+                  <img src="/Content/Icons/star-icon.png" />
+                  <img
+                    class="active"
+                    src="/Content/Icons/active-star-icon.png"
+                  />
+                </div>
+                <div class="star">
+                  <img src="/Content/Icons/star-icon.png" />
+                  <img
+                    class="active"
+                    src="/Content/Icons/active-star-icon.png"
+                  />
+                </div>
+                <div class="star">
+                  <img src="/Content/Icons/star-icon.png" />
+                  <img
+                    class="active"
+                    src="/Content/Icons/active-star-icon.png"
+                  />
+                </div>
+                <div class="star">
+                  <img src="/Content/Icons/star-icon.png" />
+                  <img
+                    class="active"
+                    src="/Content/Icons/active-star-icon.png"
+                  />
+                </div>
+                <div class="star">
+                  <img src="/Content/Icons/star-icon.png" />
+                  <img
+                    class="active"
+                    src="/Content/Icons/active-star-icon.png"
+                  />
+                </div>
+              </div>
+
+              <div class="button red">
+                <span>ÜRÜNE GİT</span>
+              </div>
+            </nuxt-link>
           </div>
         </div>
-        <div class="seg-reco-wrapper seg-clear">
-          <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-          />
-          <div class="container seg-rec-2" id="kategori2">
-            <h2>Merhaba, İlgilenebileceğiniz Diğer Ürünler</h2>
-            <div class="slider owl-carousel owl-theme owl-loaded owl-drag">
-              <div class="owl-stage-outer">
+      </div>
+      <div class="paging">
+        <a href="javascript:void(0)" class="vcenter active">
+          <span> 1 </span>
+        </a>
+        <a
+          href="/telefon?ajax=true&amp;orderBy=PriceHighToLow&amp;pageNumber=2"
+          class="vcenter"
+        >
+          <span> 2 </span>
+        </a>
+        <a
+          href="/telefon?ajax=true&amp;orderBy=PriceHighToLow&amp;pageNumber=3"
+          class="vcenter"
+        >
+          <span> 3 </span>
+        </a>
+        <a
+          href="/telefon?ajax=true&amp;orderBy=PriceHighToLow&amp;pageNumber=4"
+          class="vcenter"
+        >
+          <span> 4 </span>
+        </a>
+        <a
+          href="/telefon?ajax=true&amp;orderBy=PriceHighToLow&amp;pageNumber=5"
+          class="vcenter"
+        >
+          <span> 5 </span>
+        </a>
+        <a
+          href="/telefon?ajax=true&amp;orderBy=PriceHighToLow&amp;pageNumber=6"
+          class="vcenter"
+        >
+          <span> 6 </span>
+        </a>
+        <a
+          href="/telefon?ajax=true&amp;orderBy=PriceHighToLow&amp;pageNumber=7"
+          class="vcenter"
+        >
+          <span> 7 </span>
+        </a>
+        <a
+          href="/telefon?ajax=true&amp;orderBy=PriceHighToLow&amp;pageNumber=2"
+          class="vcenter"
+        >
+          <span> &gt; </span>
+        </a>
+        <a
+          href="/telefon?ajax=true&amp;orderBy=PriceHighToLow&amp;pageNumber=7"
+          class="vcenter"
+        >
+          <span> &gt;&gt; </span>
+        </a>
+      </div>
+      <a href="javascript:void(0)" class="filter-icon mobile"> FİLTRELE </a>
+      <div class="category-text">
+        <div class="category-text-title">Telefon</div>
+        <div class="category-text-summary">
+          <p
+            style="
+              box-sizing: border-box;
+              outline: none;
+              color: #757575;
+              font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+              font-size: 13px;
+              font-style: normal;
+              font-variant-ligatures: normal;
+              font-variant-caps: normal;
+              font-weight: 400;
+              letter-spacing: normal;
+              orphans: 2;
+              text-align: start;
+              text-indent: 0px;
+              text-transform: none;
+              white-space: normal;
+              widows: 2;
+              word-spacing: 0px;
+              -webkit-text-stroke-width: 0px;
+              background-color: #ffffff;
+              text-decoration-style: initial;
+              text-decoration-color: initial;
+            "
+          >
+            Cep telefonları hayatımıza girdikten bu yana zor görünen birçok
+            görevin daha da kolaylaştığı, uzak mesafelerin yakınlaştığı
+            yadsınamaz bir gerçektir.&nbsp;
+          </p>
+        </div>
+        <div class="category-text-all">
+          <p
+            style="
+              box-sizing: border-box;
+              outline: none;
+              color: #757575;
+              font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+              font-size: 13px;
+              font-style: normal;
+              font-variant-ligatures: normal;
+              font-variant-caps: normal;
+              font-weight: 400;
+              letter-spacing: normal;
+              orphans: 2;
+              text-align: start;
+              text-indent: 0px;
+              text-transform: none;
+              white-space: normal;
+              widows: 2;
+              word-spacing: 0px;
+              -webkit-text-stroke-width: 0px;
+              background-color: #ffffff;
+              text-decoration-style: initial;
+              text-decoration-color: initial;
+            "
+          >
+            Cep telefonları hayatımıza girdikten bu yana zor görünen birçok
+            görevin daha da kolaylaştığı, uzak mesafelerin yakınlaştığı
+            yadsınamaz bir gerçektir. Şimdiki modellere göre oldukça ilkel olan
+            telefonlar ilk kez kullanıma çıktığı zamanlarda yalnızca arama
+            yapmak ve kısa mesaj göndermek için kullanılsa da, bu son teknoloji
+            ürünü modeller&nbsp;artık günümüzde tek bir dokunuşla hayatlarımızı
+            kolaylaştırır hale geldiler. Şimdi artık tek bir parmak hareketi ile
+            dünyanın diğer ucundaki sevdiklerinizle görüntülü olarak
+            sohbet&nbsp;edebilir ya da diğer kıtada ne olduğunu anında
+            öğrenebilirsiniz. Durum böyle olunca akıllı telefonlar
+            kullanıcılarına sundukları kolaylıklar sayesinde de&nbsp;vazgeçilmez
+            bir yere sahiptir. Genç ya da yaşlı fark etmeksizin yediden yetmişe
+            herkesin kullandığı cep telefonlarını satın alırken de kendinize
+            uygun, ihtiyaçlarınızı karşılayacak modeli bulduğunuzdan emin olmak
+            istersiniz. Daha üst segment bir model mi yoksa orta segmentte bir
+            model mi istediğinizden emin olmalı ve buna hizmet edecek akıllı
+            telefonu tercih etmelisiniz.&nbsp;Bu sebeple fiyat performans
+            açısından sizi tatmin edecek cep telefonu&nbsp;modelini, güvenli bir
+            şekilde satın almak için Evkur'u tercih etmenin ayrıcalıklarından
+            faydalanabilirsiniz. Ödeme kolaylığı ve taksit
+            seçenekleriyle&nbsp;Evkur, farklı markalar ve güncellenen stoklar
+            ile size geniş bir yelpazede ürün çeşitliliği sunar.
+          </p>
+          <p
+            style="
+              box-sizing: border-box;
+              outline: none;
+              color: #757575;
+              font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+              font-size: 13px;
+              font-style: normal;
+              font-variant-ligatures: normal;
+              font-variant-caps: normal;
+              font-weight: 400;
+              letter-spacing: normal;
+              orphans: 2;
+              text-align: start;
+              text-indent: 0px;
+              text-transform: none;
+              white-space: normal;
+              widows: 2;
+              word-spacing: 0px;
+              -webkit-text-stroke-width: 0px;
+              background-color: #ffffff;
+              text-decoration-style: initial;
+              text-decoration-color: initial;
+            "
+          >
+            &nbsp;
+          </p>
+          <p
+            style="
+              box-sizing: border-box;
+              outline: none;
+              color: #757575;
+              font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+              font-size: 13px;
+              font-style: normal;
+              font-variant-ligatures: normal;
+              font-variant-caps: normal;
+              font-weight: 400;
+              letter-spacing: normal;
+              orphans: 2;
+              text-align: start;
+              text-indent: 0px;
+              text-transform: none;
+              white-space: normal;
+              widows: 2;
+              word-spacing: 0px;
+              -webkit-text-stroke-width: 0px;
+              background-color: #ffffff;
+              text-decoration-style: initial;
+              text-decoration-color: initial;
+            "
+          >
+            &nbsp;
+          </p>
+          <div
+            id="yaziMetin"
+            style="
+              box-sizing: border-box;
+              outline: none;
+              color: #757575;
+              font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+              font-size: 13px;
+              font-style: normal;
+              font-variant-ligatures: normal;
+              font-variant-caps: normal;
+              font-weight: 400;
+              letter-spacing: normal;
+              orphans: 2;
+              text-align: start;
+              text-indent: 0px;
+              text-transform: none;
+              white-space: normal;
+              widows: 2;
+              word-spacing: 0px;
+              -webkit-text-stroke-width: 0px;
+              background-color: #ffffff;
+              text-decoration-style: initial;
+              text-decoration-color: initial;
+            "
+          >
+            <h2>
+              <strong
+                >Mesafeleri Kaldırarak Uzakları Yakınlaştıran
+                Teknoloji&nbsp;</strong
+              >
+            </h2>
+            <p style="box-sizing: border-box; outline: none">
+              Akıllı telefonlar dünya sahnesine çıktıktan sonra mesafeleri
+              ortadan kaldırarak insanların uzaktaki sevdikleriyle çok daha
+              kolay bir şekilde iletişim kurmalarını sağladı. Büyük küçük
+              herkesin sahip olduğu telefonlar sayesinde dünyanın her yerinden
+              haber almak saniyeler süre bir iş haline geldi. Bu sayede çok
+              uzakta, başka bir kıtada olan sevdiklerinizle ne zaman isterseniz
+              görüntülü olarak konuşabilirsiniz. Son teknoloji akıllı telefonlar
+              artık video - call özelliği sayesinde eskiden sadece sesini
+              duyabildiğiniz sevdiklerinizin yüzünü de görmenize imkan sağlar.
+              Daha hızlı ve rutin bir iletişim kurmak için anlık mesajlaşma
+              uygulamalarını kullanabilir ve internet üzerinden uzaktaki
+              sevdiklerinizle günün her anında iletişim kurabilirsiniz. Hatta
+              onlara ses kaydı, video, fotoğraf ve&nbsp;müzik de
+              gönderebilirsiniz. Dahası artık akıllı telefon modelleri
+              profesyonel hayatta da kullanılabilir hale geldi. Telefonunuz ile
+              bilgisayarınızda yaptığınız işleri yapabilir, uzaktan görüntülü ve
+              sesli olarak toplantılara katılabilir ve dijitalleşmiş dünyaya
+              ayak uydurabilirsiniz.&nbsp;
+            </p>
+            <p style="box-sizing: border-box; outline: none">&nbsp;</p>
+            <p style="box-sizing: border-box; outline: none">&nbsp;</p>
+            <h2>
+              <strong style="box-sizing: border-box; outline: none"
+                >Akıllı Telefon Modelleri</strong
+              >
+            </h2>
+            <p style="box-sizing: border-box; outline: none">
+              Evkur'un geniş ürün yelpazesindeki cep telefonlarından istediğiniz
+              özellikleri bulup kendi kişisel zevk ve ihtiyaçlarınıza hitap eden
+              modeli tercih edebilirsiniz. Son teknoloji akıllı telefonlarını
+              üreten dünya lideri Samsung markasının ihtiyaçlarınıza yönelik
+              birçok modeline&nbsp;6 ay taksit fırsatıyla ve garanti
+              güvencesiyle sahip olabilirsiniz. Google tarafından desteklenen
+              Android işletim sistemine sahip olan Samsung, LG,&nbsp;Huawei
+              markaları, tüm dünyada kullanıcılar tarafından memnuniyetle tercih
+              edilir. Android sistemine istediğiniz uygulamayı yüklemek için
+              Google Play'i kullanabilirsiniz. Son zamanlarda kalitesiyle tüm
+              dünyada adından söz ettiren Xiaomi ve Oppo markalarına da Evkur
+              ayrıcalıklarını kullanarak sahip olabilirsiniz. Uygun fiyatlarıyla
+              ihtiyaçlarınızı karşılayacak ve sizlere son teknoloji çözümler
+              sunacak Alcatel markası da Evkur'un ürün skalasında yerini
+              almaktadır.&nbsp;Samsung, Huawei, LG,
+              Xiaomi&nbsp;markaları&nbsp;yalnızca akıllı telefonlarla değil,
+              aynı zamanda akıllı saat ve bileklikleriyle de hayatınızı
+              kolaylaştırmaktadır. Farklı özelliklere ve fiyatlara sahip olan
+              marka ve modellerden sizin taleplerinizi karşılayanı tercih
+              edebilirsiniz.&nbsp;&nbsp;
+            </p>
+            <p style="box-sizing: border-box; outline: none">&nbsp;</p>
+            <p style="box-sizing: border-box; outline: none">&nbsp;</p>
+            <h2>
+              <strong style="box-sizing: border-box; outline: none"
+                >Mükemmel Akıllı Telefon Uygulamaları ile Sınırlarınızı
+                Genişletin</strong
+              >
+            </h2>
+            <p style="box-sizing: border-box; outline: none">
+              Akıllı telefonlar ile yapılabilecekler gün geçtikçe daha da
+              artmakta ve profesyonelleşmektedir. Sevdiklerinize ulaşmak gibi
+              basit bir ihtiyaçtan tutun, profesyonel çizim yapmaya kadar birçok
+              alanda kullanılan cep telefonlarını&nbsp;satın almadan önce
+              kendinize ihtiyacınızın ne olduğunu ve hangi özelliklerden
+              yararlanmak istediğinizi sormalısınız. Bu şekilde
+              onlarca&nbsp;farklı marka ve model arasında seçim yapmak zorunda
+              kalmadan,&nbsp;oturduğunuz yerden hiç yorulmadan size en uygun
+              modeli tespit edip ona sahip olabilirsiniz. Teknik özellikleriyle
+              hayatınızı kolaylaştıracak son model akıllı telefonların
+              kullanıcılarına sunduğu özellikler gün geçtikçe artmaktadır.
+              Seçtiğiniz akıllı telefonun özelliklerine ek olarak&nbsp;çevrimiçi
+              olarak indireceğiniz uygulamalar sayesinde;
+            </p>
+            <ul style="box-sizing: border-box; outline: none">
+              <li style="box-sizing: border-box; outline: none">
+                Mükemmel ses kalitesi ile dilediğiniz zaman dilediğiniz
+                yerde&nbsp;müzik dinleyebilirsiniz.
+              </li>
+              <li style="box-sizing: border-box; outline: none">
+                Tıpkı bilgisayarınızda oynadığınız&nbsp;gibi
+                istediğiniz&nbsp;oyunu telefonunuza indirerek yüksek görüntü
+                kalitesi ile&nbsp;oynayabilirsiniz.
+              </li>
+              <li style="box-sizing: border-box; outline: none">
+                Yolda, otobüste, okulda istediğiniz her yerde yüksek görüntü
+                kalitesi ile film ya da dizi seyredebilirsiniz.
+              </li>
+              <li style="box-sizing: border-box; outline: none">
+                Kitap okuyabilir hatta indirdiğiniz uygulamalar sayesinde
+                kitapları dinleyebilirsiniz.
+              </li>
+              <li style="box-sizing: border-box; outline: none">
+                Tıpkı bir profesyonel makine kullanıyormuş gibi olağanüstü
+                fotoğraflar çekebilir ve sonrasında kendi zevkinize göre
+                filtreler kullanarak fotoğraflarınızı düzenleyebilirsiniz.
+              </li>
+              <li style="box-sizing: border-box; outline: none">
+                Bankacılık ve benzeri işlemleri, bankaların kendi uygulamalarını
+                indirerek kolay bir şekilde cep telefonunuzdan
+                halledebilirsiniz.
+              </li>
+              <li style="box-sizing: border-box; outline: none">
+                Market ya da kıyafet alışverişlerinizi pratik bir şekilde
+                yapabilirsiniz.
+              </li>
+              <li style="box-sizing: border-box; outline: none">
+                Tıpkı bir defter gibi not alabilir, çizim yapabilirsiniz.
+              </li>
+              <li style="box-sizing: border-box; outline: none">
+                Yüz tanıma ve parmak izi özellikleri sayesinde verilerinizin
+                güvende olduğundan emin olabilirsiniz.
+              </li>
+              <li style="box-sizing: border-box; outline: none">
+                Geniş ve daha da arttırılabilen saklama kapasitesi ile
+                sevdiğiniz tüm fotoğrafları, şarkıları ve belgeleri silmeden
+                depolayabilirsiniz.
+              </li>
+            </ul>
+            <p>&nbsp;</p>
+            <h2>
+              <strong style="box-sizing: border-box; outline: none"
+                >Artık Siz Değil Akıllı Telefonunuz Düşünsün</strong
+              >
+            </h2>
+            <p style="box-sizing: border-box; outline: none">
+              Akıllı telefonlara her geçen gün sizlere daha çok hizmet edebilmek
+              adına yeni özellikler eklenmektedir.&nbsp;Bu özelliklerden en
+              işlevsel olanı da şüphesiz ki sesli asistanlardır. Neredeyse her
+              markanın kendine özel sesli asistanları bulunmaktadır,&nbsp;bu
+              sayede artık kullanıcılar sadece konuşarak telefonlarına birçok
+              komut verebilirler. Artık ellerinizi kullanmadan sadece sesiniz
+              ile asistanınıza komut vererek&nbsp;istediğiniz numarayı
+              arayabilir, randevularınızı düzenleyebilir, kameranızı açıp
+              yaşadığınız anı ölümsüzleştirebilir ya da&nbsp;aklınıza takılan
+              herhangi bir bilgiye arama motorlarından ulaşabilirsiniz. Bu
+              sayede artık günlük hayatın yoğunluğunda her zaman yanınızda olan
+              ve her durumda size yardım edecek bir asistana sahip
+              olabilirsiniz.&nbsp;
+            </p>
+            <p style="box-sizing: border-box; outline: none">&nbsp;</p>
+            <p style="box-sizing: border-box; outline: none">&nbsp;</p>
+            <h2>
+              <strong style="box-sizing: border-box; outline: none"
+                >Akıllı Telefonunuzun İhtiyacı Olan Tüm Aksesuarlar
+                Evkur'da!&nbsp;</strong
+              >
+            </h2>
+            <p style="box-sizing: border-box; outline: none">
+              Modern hayatın yardımcıları cep telefonlarının kullanımını daha
+              pratik bir hale getiren bazı yardımcılar vardır. Cep telefonu
+              aksesuarları kullanıcıların hayatlarını kolaylaştırmak ve
+              teknoloji kullanımını daha keyifli bir hale getirmek adına çok
+              fazla çeşitlilik gösterir. Akıllı telefonunuzun günlük kullanımda
+              alabileceği hasarları azaltmak ve ekranın kırılmasını engellemek
+              için telefon kılıfları ve kırılmaz ekranlar kullanılması tavsiye
+              edilir. Bu şekilde telefonunuzu daha uzun bir süre
+              kullanabilirsiniz. Teknoloji ilerleyip akıllı telefonların
+              yapabildikleri çoğaldıkça batarya problemi de doğal olarak ortaya
+              çıkmıştır. Bir yolculuk sırasında ya da önemli bir toplantıda
+              şarjın bitmesi kimsenin karşılaşmak istemeyeceği bir
+              durumdur,&nbsp;bu yüzden de Power Bank ve şarj kabloları
+              kullanılır. Dilediğiniz yerde müzik dinleme keyfinden mahrum
+              kalmamanız için kullanılan kulaklıklar artık kablosuz olarak satın
+              alınabilir ve bu şüphesiz ki çok pratik bir kullanım sağlar. Uzun
+              pil ömrüne sahip olan Bluetooth kulaklıkları istediğiniz an,
+              istediğiniz yerde özgür bir şekilde kullanabilirsiniz. Son
+              teknoloji harikası olan akıllı saat ve bileklikler sayısız
+              işlevleri ile insan hayatını kolaylaştırmaktadır. Bileğinize
+              taktığınız bu akıllı cihazlar gün içerisinde attığınız adımları,
+              yaptığınız spor aktivitelerini kayıt altında tutar. Sahip
+              oldukları navigasyon özelliği sayesinde yol tarifi gibi önemli
+              alanlarda size yardımcı olur ve dokunmatik ekran sayesinde
+              kullanımları pratiktir. Akıllı saat ve bileklikleri cep
+              telefonlarınız ile senkronize edebilir ve telefonunuza gelen
+              bildirimleri saatinizden yönetebilirsiniz. Bluetooth hoparlörler
+              kaliteli müzik keyfini istediğiniz her yerde&nbsp;yaşamanız için
+              kolay taşınabilme özelliğine sahiptir ve güçlü ses yeteneği ile
+              gittiğiniz her ortama keyif katmaya&nbsp;imkan sağlar. Tüm bu
+              aksesuarlara&nbsp;ve daha fazlasına&nbsp;güvenilir bir şekilde
+              Evkur güvencesi ile sahip olabilirsiniz.&nbsp;
+            </p>
+            <p style="box-sizing: border-box; outline: none">&nbsp;</p>
+            <p style="box-sizing: border-box; outline: none">&nbsp;</p>
+            <h2>
+              <strong style="box-sizing: border-box; outline: none"
+                >Evkur Güvencesiyle Teknolojinin Tadını Çıkarın&nbsp;</strong
+              >
+            </h2>
+            <p style="box-sizing: border-box; outline: none">
+              Evkur'un kullanıcılarına sunduğu güvenceyle son teknoloji akıllı
+              telefonlara ve aksesuarlara&nbsp;farklı renk seçenekleriyle sahip
+              olmak artık sandığınızdan çok daha kolay. Birçok insan için cep
+              telefonu ve aksesuarlarını satın alırken kalite ile birlikte uygun
+              fiyat da çok önemli bir kriterdir. Evkur sayesinde 6 ay taksitle
+              kolay bir şekilde son model telefon çeşitlerini satın alınabilir
+              ve rahat bir şekilde ödeme yapılabilir. Müşteri memnuniyetinin ön
+              planda tutulduğu bir marka olan&nbsp;Evkur, en kaliteli ürünlere
+              güvenilir bir şekilde sahip olmanız için sizlere ödeme kolaylığı
+              sağlar. Sürekli olarak bulabileceğiniz farklı markalar ve
+              güncellenen stoklar sayesinde istediğiniz modele tek bir tık ile
+              ulaşabilirsiniz. Ayrıca herhangi bir problem yaşarsanız size
+              sunulan garanti güvencesiyle sorununuza&nbsp;hızlı&nbsp;bir
+              şekilde çözüm bulabilirsiniz.&nbsp;
+            </p>
+          </div>
+          <a href="javascript:void(0)" class="see-all">Özeti Göster</a>
+        </div>
+      </div>
+      <div class="seg-reco-wrapper seg-clear">
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <div class="container seg-rec-2" id="kategori2">
+          <h2>Merhaba, İlgilenebileceğiniz Diğer Ürünler</h2>
+          <div class="slider owl-carousel owl-theme owl-loaded owl-drag">
+            <div class="owl-stage-outer">
+              <div
+                class="owl-stage"
+                style="
+                  transform: translate3d(-1056px, 0px, 0px);
+                  transition: all 0s ease 0s;
+                  width: 4224px;
+                "
+              >
                 <div
-                  class="owl-stage"
-                  style="
-                    transform: translate3d(-1056px, 0px, 0px);
-                    transition: all 0s ease 0s;
-                    width: 4224px;
-                  "
+                  class="owl-item cloned"
+                  style="width: 166px; margin-right: 10px"
                 >
-                  <div
-                    class="owl-item cloned"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/samsung-galaxy-a31-128gb-siyah-akilli-telefon-a315f?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=206256&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %13
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/galaxy-a31-siyah_as4c3b_500.jpg"
-                            alt=""
-                          />
+                  <div class="seg-item">
+                    <a
+                      href="https://www.evkur.com.tr/samsung/samsung-galaxy-a21s-64gb-siyah-akilli-telefon?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=206715&amp;_sgm_action=click"
+                      class="item"
+                    >
+                      <div class="item-image">
+                        <div class="discount-info vcenter">
+                          <span>
+                            %6
+                            <br />
+                            İNDİRİM
+                          </span>
                         </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Samsung Galaxy A31 128GB Siyah Akıllı Telefon
-                            (A315F)
-                          </div>
 
-                          <div class="price">
-                            <span> 3,099<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              3,599<sup>,00</sup> TL
-                            </span>
-                          </div>
+                        <img
+                          class="owl-lazy"
+                          data-src="https://cdn.evkur.com.tr/c/Product/thumbs/samsung-galaxy-a21s-64gb-cift-sim-siyah1_z0ste7_500.jpeg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="item-info">
+                        <div class="name multiline-ellipsis">
+                          Samsung Galaxy A21s...
+                        </div>
 
-                          <div class="rating">
-                            <div class="stars" data-rating="5">
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
+                        <div class="price">
+                          <span> 2,799<sup>,00</sup> TL </span>
+                          <span class="old-price">
+                            2,999<sup>,00</sup> TL
+                          </span>
+                        </div>
+
+                        <div class="rating">
+                          <div class="stars" data-rating="0">
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
                             </div>
                           </div>
                         </div>
-                      </a>
-                    </div>
+                      </div>
+                    </a>
                   </div>
-                  <div
-                    class="owl-item cloned"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/hometech-alfa-intel-celeron-n33504-gb64-gbssd14-hdwin10-?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=215206&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %20
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/alfa-450c-1_w4tha3_500.jpg"
-                            alt=""
-                          />
+                </div>
+                <div
+                  class="owl-item cloned"
+                  style="width: 166px; margin-right: 10px"
+                >
+                  <div class="seg-item">
+                    <a
+                      href="https://www.evkur.com.tr/damla-siyah-masa-sandalye-tk?banner=slider15102020&amp;_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=206876&amp;_sgm_action=click"
+                      class="item"
+                    >
+                      <div class="item-image">
+                        <img
+                          class="owl-lazy"
+                          data-src="https://cdn.evkur.com.tr/c/Product/thumbs/a1_ef0y5m_500.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="item-info">
+                        <div class="name multiline-ellipsis">
+                          Damla Masa Takımı&nbsp;Siyah
                         </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Hometech ALFA-450C Intel Celeron N3350 1.1GHz
-                            İşlemci 4Gb Ram 64Gb Ssd 14" Ekran Windows 10
-                            İşletim Sistemli Gümüş Dizüstü Bilgisayar
-                          </div>
+                        <div class="price">
+                          <span> 1,489<sup>,00</sup> TL </span>
+                        </div>
 
-                          <div class="price">
-                            <span> 2,399<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              2,999<sup>,00</sup> TL
-                            </span>
-                          </div>
-
-                          <div class="rating">
-                            <div class="stars" data-rating="0">
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
+                        <div class="rating">
+                          <div class="stars" data-rating="0">
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
                             </div>
                           </div>
                         </div>
-                      </a>
-                    </div>
+                      </div>
+                    </a>
                   </div>
-                  <div
-                    class="owl-item cloned"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/samsung/samsung-galaxy-a21s-64gb-siyah-akilli-telefon?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=206715&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %6
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/samsung-galaxy-a21s-64gb-cift-sim-siyah1_z0ste7_500.jpeg"
-                            alt=""
-                          />
+                </div>
+                <div
+                  class="owl-item cloned"
+                  style="width: 166px; margin-right: 10px"
+                >
+                  <div class="seg-item">
+                    <a
+                      href="https://www.evkur.com.tr/samsung-galaxy-a31-128gb-siyah-akilli-telefon-a315f?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=206256&amp;_sgm_action=click"
+                      class="item"
+                    >
+                      <div class="item-image">
+                        <div class="discount-info vcenter">
+                          <span>
+                            %16
+                            <br />
+                            İNDİRİM
+                          </span>
                         </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Samsung Galaxy A21s 64GB Siyah Akıllı Telefon
-                            (A217F)
-                          </div>
 
-                          <div class="price">
-                            <span> 2,799<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              2,999<sup>,00</sup> TL
-                            </span>
-                          </div>
+                        <img
+                          class="owl-lazy"
+                          data-src="https://cdn.evkur.com.tr/c/Product/thumbs/galaxy-a31-siyah_as4c3b_500.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="item-info">
+                        <div class="name multiline-ellipsis">
+                          Samsung Galaxy A31...
+                        </div>
 
-                          <div class="rating">
-                            <div class="stars" data-rating="0">
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
+                        <div class="price">
+                          <span> 2,999<sup>,00</sup> TL </span>
+                          <span class="old-price">
+                            3,599<sup>,00</sup> TL
+                          </span>
+                        </div>
+
+                        <div class="rating">
+                          <div class="stars" data-rating="5">
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
                             </div>
                           </div>
                         </div>
-                      </a>
-                    </div>
+                      </div>
+                    </a>
                   </div>
-                  <div
-                    class="owl-item cloned"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/580-m2-ekostar-hali11?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=198398&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/301a8135-1920x1920_f5nte0_500.jpg"
-                            alt=""
-                          />
+                </div>
+                <div
+                  class="owl-item cloned"
+                  style="width: 166px; margin-right: 10px"
+                >
+                  <div class="seg-item">
+                    <a
+                      href="https://www.evkur.com.tr/580-m2-ekostar-hali11?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=198398&amp;_sgm_action=click"
+                      class="item"
+                    >
+                      <div class="item-image">
+                        <img
+                          class="owl-lazy"
+                          data-src="https://cdn.evkur.com.tr/c/Product/thumbs/301a8135-1920x1920_f5nte0_500.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="item-info">
+                        <div class="name multiline-ellipsis">
+                          Merinos 200x290 cm...
                         </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Merinos 200x290 cm Ekostar Halı 32697-30
-                          </div>
-                          <div class="price">
-                            <span> 529<sup>,00</sup> TL </span>
-                          </div>
+                        <div class="price">
+                          <span> 529<sup>,00</sup> TL </span>
+                        </div>
 
-                          <div class="rating">
-                            <div class="stars" data-rating="0">
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
+                        <div class="rating">
+                          <div class="stars" data-rating="0">
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
                             </div>
                           </div>
                         </div>
-                      </a>
-                    </div>
+                      </div>
+                    </a>
                   </div>
-                  <div
-                    class="owl-item cloned"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/realme-6-128gb-yildiz-beyazi-akilli-telefon?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=206001&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %14
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/realme-6-yildiz-beyazi_z9y1fk_500.jpg"
-                            alt=""
-                          />
+                </div>
+                <div
+                  class="owl-item cloned"
+                  style="width: 166px; margin-right: 10px"
+                >
+                  <div class="seg-item">
+                    <a
+                      href="https://www.evkur.com.tr/oppo-a52-464gb-black?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=213726&amp;_sgm_action=click"
+                      class="item"
+                    >
+                      <div class="item-image">
+                        <div class="discount-info vcenter">
+                          <span>
+                            %10
+                            <br />
+                            İNDİRİM
+                          </span>
                         </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Realme 6 128GB Yıldız Beyazı Akıllı Telefon
-                          </div>
 
-                          <div class="price">
-                            <span> 2,999<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              3,499<sup>,00</sup> TL
-                            </span>
-                          </div>
+                        <img
+                          class="owl-lazy"
+                          data-src="https://cdn.evkur.com.tr/c/Product/thumbs/a52-siyah1_g7qtd4_f7kag4_t2ekd6_500.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="item-info">
+                        <div class="name multiline-ellipsis">
+                          Oppo A52 4/64GB Siyah...
+                        </div>
 
-                          <div class="rating">
-                            <div class="stars" data-rating="5">
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
+                        <div class="price">
+                          <span> 2,689<sup>,00</sup> TL </span>
+                          <span class="old-price">
+                            2,999<sup>,00</sup> TL
+                          </span>
+                        </div>
+
+                        <div class="rating">
+                          <div class="stars" data-rating="0">
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
                             </div>
                           </div>
                         </div>
-                      </a>
-                    </div>
+                      </div>
+                    </a>
                   </div>
-                  <div
-                    class="owl-item cloned"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/368-m2-praga-hali4?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=198328&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %50
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/19084-012-praga-1920x1920_b7rqj1_500.jpg"
-                            alt=""
-                          />
+                </div>
+                <div
+                  class="owl-item cloned"
+                  style="width: 166px; margin-right: 10px"
+                >
+                  <div class="seg-item">
+                    <a
+                      href="https://www.evkur.com.tr/new-vizyon-deluks-takim-?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=168420&amp;_sgm_action=click"
+                      class="item"
+                    >
+                      <div class="item-image">
+                        <img
+                          class="owl-lazy"
+                          data-src="https://cdn.evkur.com.tr/c/Product/thumbs/aa_c5k9nr_500.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="item-info">
+                        <div class="name multiline-ellipsis">
+                          New Vizyon Deluks Koltuk...
                         </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Merinos Elegance 160x230 cm Praga Halı 19084-12
-                          </div>
+                        <div class="price">
+                          <span> 6,749<sup>,00</sup> TL </span>
+                        </div>
 
-                          <div class="price">
-                            <span> 1,030<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              2,060<sup>,00</sup> TL
-                            </span>
-                          </div>
-
-                          <div class="rating">
-                            <div class="stars" data-rating="0">
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
+                        <div class="rating">
+                          <div class="stars" data-rating="5">
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
                             </div>
                           </div>
                         </div>
-                      </a>
-                    </div>
+                      </div>
+                    </a>
                   </div>
-                  <div
-                    class="owl-item active"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/trident-a23-max-64gb-mavi-akilli-telefon?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=214262&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %8
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/trident-a23-blue_k4t3hb_y3k9em_500.jpg"
-                            alt=""
-                            src="https://cdn.evkur.com.tr/c/Product/thumbs/trident-a23-blue_k4t3hb_y3k9em_500.jpg"
-                            style="opacity: 1"
-                          />
+                </div>
+                <div
+                  class="owl-item active"
+                  style="width: 166px; margin-right: 10px"
+                >
+                  <div class="seg-item">
+                    <a
+                      href="https://www.evkur.com.tr/trident-a23-max-64gb-mavi-akilli-telefon?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=214262&amp;_sgm_action=click"
+                      class="item"
+                    >
+                      <div class="item-image">
+                        <div class="discount-info vcenter">
+                          <span>
+                            %8
+                            <br />
+                            İNDİRİM
+                          </span>
                         </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Trident A23 Max 64GB Mavi Akıllı Telefon
-                          </div>
 
-                          <div class="price">
-                            <span> 2,099<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              2,299<sup>,00</sup> TL
-                            </span>
-                          </div>
+                        <img
+                          class="owl-lazy"
+                          data-src="https://cdn.evkur.com.tr/c/Product/thumbs/trident-a23-blue_k4t3hb_y3k9em_500.jpg"
+                          alt=""
+                          src="https://cdn.evkur.com.tr/c/Product/thumbs/trident-a23-blue_k4t3hb_y3k9em_500.jpg"
+                          style="opacity: 1"
+                        />
+                      </div>
+                      <div class="item-info">
+                        <div class="name multiline-ellipsis">
+                          Trident A23 Max 64GB Mavi...
+                        </div>
 
-                          <div class="rating">
-                            <div class="stars" data-rating="0">
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
+                        <div class="price">
+                          <span> 2,099<sup>,00</sup> TL </span>
+                          <span class="old-price">
+                            2,299<sup>,00</sup> TL
+                          </span>
+                        </div>
+
+                        <div class="rating">
+                          <div class="stars" data-rating="0">
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
                             </div>
                           </div>
                         </div>
-                      </a>
-                    </div>
+                      </div>
+                    </a>
                   </div>
-                  <div
-                    class="owl-item active"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/408-m2-selectum-hali4?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=199944&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/19042-035-selectum-1920_ed7z9h_500.jpg"
-                            alt=""
-                            src="https://cdn.evkur.com.tr/c/Product/thumbs/19042-035-selectum-1920_ed7z9h_500.jpg"
-                            style="opacity: 1"
-                          />
+                </div>
+                <div
+                  class="owl-item active"
+                  style="width: 166px; margin-right: 10px"
+                >
+                  <div class="seg-item">
+                    <a
+                      href="https://www.evkur.com.tr/408-m2-selectum-hali4?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=199944&amp;_sgm_action=click"
+                      class="item"
+                    >
+                      <div class="item-image">
+                        <img
+                          class="owl-lazy"
+                          data-src="https://cdn.evkur.com.tr/c/Product/19042-035-selectum-1920_ed7z9h.jpg"
+                          alt=""
+                          src="https://cdn.evkur.com.tr/c/Product/19042-035-selectum-1920_ed7z9h.jpg"
+                          style="opacity: 1"
+                        />
+                      </div>
+                      <div class="item-info">
+                        <div class="name multiline-ellipsis">
+                          Merinos Elegance...
                         </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Merinos Elegance 170x240 cm Selectum Halı 19042-35
-                          </div>
-                          <div class="price">
-                            <span> 1,142<sup>,00</sup> TL </span>
-                          </div>
+                        <div class="price">
+                          <span> 1,142<sup>,00</sup> TL </span>
+                        </div>
 
-                          <div class="rating">
-                            <div class="stars" data-rating="0">
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
+                        <div class="rating">
+                          <div class="stars" data-rating="0">
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
                             </div>
                           </div>
                         </div>
-                      </a>
-                    </div>
+                      </div>
+                    </a>
                   </div>
-                  <div
-                    class="owl-item active"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/samsung-galaxy-a11-32gb-siyah-akilli-telefon-a115f?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=206517&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %10
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/galaxy-a11-siyah_pe2w0f_500.jpg"
-                            alt=""
-                            src="https://cdn.evkur.com.tr/c/Product/thumbs/galaxy-a11-siyah_pe2w0f_500.jpg"
-                            style="opacity: 1"
-                          />
+                </div>
+                <div
+                  class="owl-item active"
+                  style="width: 166px; margin-right: 10px"
+                >
+                  <div class="seg-item">
+                    <a
+                      href="https://www.evkur.com.tr/samsung-galaxy-a11-32gb-siyah-akilli-telefon-a115f?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=206517&amp;_sgm_action=click"
+                      class="item"
+                    >
+                      <div class="item-image">
+                        <div class="discount-info vcenter">
+                          <span>
+                            %10
+                            <br />
+                            İNDİRİM
+                          </span>
                         </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Samsung Galaxy A11 32GB Siyah Akıllı Telefon (A115F)
-                          </div>
 
-                          <div class="price">
-                            <span> 2,499<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              2,799<sup>,00</sup> TL
-                            </span>
-                          </div>
+                        <img
+                          class="owl-lazy"
+                          data-src="https://cdn.evkur.com.tr/c/Product/thumbs/galaxy-a11-siyah_pe2w0f_500.jpg"
+                          alt=""
+                          src="https://cdn.evkur.com.tr/c/Product/thumbs/galaxy-a11-siyah_pe2w0f_500.jpg"
+                          style="opacity: 1"
+                        />
+                      </div>
+                      <div class="item-info">
+                        <div class="name multiline-ellipsis">
+                          Samsung Galaxy A11...
+                        </div>
 
-                          <div class="rating">
-                            <div class="stars" data-rating="5">
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
+                        <div class="price">
+                          <span> 2,499<sup>,00</sup> TL </span>
+                          <span class="old-price">
+                            2,799<sup>,00</sup> TL
+                          </span>
+                        </div>
+
+                        <div class="rating">
+                          <div class="stars" data-rating="5">
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
                             </div>
                           </div>
                         </div>
-                      </a>
-                    </div>
+                      </div>
+                    </a>
                   </div>
-                  <div
-                    class="owl-item active"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/merinos-elegance-160x230-cm-creante-hali-19143-96?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=198346&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %50
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/19143-096-creante-1920x1920_sy3b9n.jpg"
-                            alt=""
-                            src="https://cdn.evkur.com.tr/c/Product/19143-096-creante-1920x1920_sy3b9n.jpg"
-                            style="opacity: 1"
-                          />
+                </div>
+                <div
+                  class="owl-item active"
+                  style="width: 166px; margin-right: 10px"
+                >
+                  <div class="seg-item">
+                    <a
+                      href="https://www.evkur.com.tr/merinos-elegance-160x230-cm-creante-hali-19143-96?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=198346&amp;_sgm_action=click"
+                      class="item"
+                    >
+                      <div class="item-image">
+                        <div class="discount-info vcenter">
+                          <span>
+                            %50
+                            <br />
+                            İNDİRİM
+                          </span>
                         </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Merinos Elegance 160x230 cm Creante Halı 19143-96
-                          </div>
 
-                          <div class="price">
-                            <span> 1,030<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              2,062<sup>,00</sup> TL
-                            </span>
-                          </div>
+                        <img
+                          class="owl-lazy"
+                          data-src="https://cdn.evkur.com.tr/c/Product/19143-096-creante-1920x1920_sy3b9n.jpg"
+                          alt=""
+                          src="https://cdn.evkur.com.tr/c/Product/19143-096-creante-1920x1920_sy3b9n.jpg"
+                          style="opacity: 1"
+                        />
+                      </div>
+                      <div class="item-info">
+                        <div class="name multiline-ellipsis">
+                          Merinos Elegance...
+                        </div>
 
-                          <div class="rating">
-                            <div class="stars" data-rating="0">
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
+                        <div class="price">
+                          <span> 1,030<sup>,00</sup> TL </span>
+                          <span class="old-price">
+                            2,062<sup>,00</sup> TL
+                          </span>
+                        </div>
+
+                        <div class="rating">
+                          <div class="stars" data-rating="0">
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
                             </div>
                           </div>
                         </div>
-                      </a>
-                    </div>
+                      </div>
+                    </a>
                   </div>
-                  <div
-                    class="owl-item active"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/trident-a53-pro-128gb-beyaz-akilli-telefon?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=214352&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %10
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/trident-a53-pro-beyaz_bt89ew_500.jpg"
-                            alt=""
-                            src="https://cdn.evkur.com.tr/c/Product/thumbs/trident-a53-pro-beyaz_bt89ew_500.jpg"
-                            style="opacity: 1"
-                          />
+                </div>
+                <div
+                  class="owl-item active"
+                  style="width: 166px; margin-right: 10px"
+                >
+                  <div class="seg-item">
+                    <a
+                      href="https://www.evkur.com.tr/trident-a53-pro-128gb-beyaz-akilli-telefon?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=214352&amp;_sgm_action=click"
+                      class="item"
+                    >
+                      <div class="item-image">
+                        <div class="discount-info vcenter">
+                          <span>
+                            %10
+                            <br />
+                            İNDİRİM
+                          </span>
                         </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Trident A53 Pro 128GB Beyaz Akıllı Telefon
-                          </div>
 
-                          <div class="price">
-                            <span> 2,699<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              2,999<sup>,00</sup> TL
-                            </span>
-                          </div>
+                        <img
+                          class="owl-lazy"
+                          data-src="https://cdn.evkur.com.tr/c/Product/thumbs/trident-a53-pro-beyaz_bt89ew_500.jpg"
+                          alt=""
+                          src="https://cdn.evkur.com.tr/c/Product/thumbs/trident-a53-pro-beyaz_bt89ew_500.jpg"
+                          style="opacity: 1"
+                        />
+                      </div>
+                      <div class="item-info">
+                        <div class="name multiline-ellipsis">
+                          Trident A53 Pro 128GB Beyaz...
+                        </div>
 
-                          <div class="rating">
-                            <div class="stars" data-rating="0">
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
+                        <div class="price">
+                          <span> 2,699<sup>,00</sup> TL </span>
+                          <span class="old-price">
+                            2,999<sup>,00</sup> TL
+                          </span>
+                        </div>
+
+                        <div class="rating">
+                          <div class="stars" data-rating="5">
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
                             </div>
                           </div>
                         </div>
-                      </a>
-                    </div>
+                      </div>
+                    </a>
                   </div>
-                  <div
-                    class="owl-item"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/new-vizyon-deluks-takim-?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=168420&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/aa_c5k9nr_500.jpg"
-                            alt=""
-                          />
+                </div>
+                <div class="owl-item" style="width: 166px; margin-right: 10px">
+                  <div class="seg-item">
+                    <a
+                      href="https://www.evkur.com.tr/hometech-alfa-intel-celeron-n33504-gb64-gbssd14-hdwin10-?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=215206&amp;_sgm_action=click"
+                      class="item"
+                    >
+                      <div class="item-image">
+                        <div class="discount-info vcenter">
+                          <span>
+                            %20
+                            <br />
+                            İNDİRİM
+                          </span>
                         </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            New Vizyon Deluks Koltuk Takımı
-                          </div>
-                          <div class="price">
-                            <span> 6,749<sup>,00</sup> TL </span>
-                          </div>
 
-                          <div class="rating">
-                            <div class="stars" data-rating="5">
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
+                        <img
+                          class="owl-lazy"
+                          data-src="https://cdn.evkur.com.tr/c/Product/thumbs/alfa-450c-1_w4tha3_500.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="item-info">
+                        <div class="name multiline-ellipsis">
+                          Hometech ALFA-450C...
+                        </div>
+
+                        <div class="price">
+                          <span> 2,399<sup>,00</sup> TL </span>
+                          <span class="old-price">
+                            2,999<sup>,00</sup> TL
+                          </span>
+                        </div>
+
+                        <div class="rating">
+                          <div class="stars" data-rating="0">
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
                             </div>
                           </div>
                         </div>
-                      </a>
-                    </div>
+                      </div>
+                    </a>
                   </div>
-                  <div
-                    class="owl-item"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/samsung-galaxy-a31-128gb-siyah-akilli-telefon-a315f?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=206256&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %13
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/galaxy-a31-siyah_as4c3b_500.jpg"
-                            alt=""
-                          />
+                </div>
+                <div class="owl-item" style="width: 166px; margin-right: 10px">
+                  <div class="seg-item">
+                    <a
+                      href="https://www.evkur.com.tr/samsung/samsung-galaxy-a21s-64gb-siyah-akilli-telefon?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=206715&amp;_sgm_action=click"
+                      class="item"
+                    >
+                      <div class="item-image">
+                        <div class="discount-info vcenter">
+                          <span>
+                            %6
+                            <br />
+                            İNDİRİM
+                          </span>
                         </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Samsung Galaxy A31 128GB Siyah Akıllı Telefon
-                            (A315F)
-                          </div>
 
-                          <div class="price">
-                            <span> 3,099<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              3,599<sup>,00</sup> TL
-                            </span>
-                          </div>
+                        <img
+                          class="owl-lazy"
+                          data-src="https://cdn.evkur.com.tr/c/Product/thumbs/samsung-galaxy-a21s-64gb-cift-sim-siyah1_z0ste7_500.jpeg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="item-info">
+                        <div class="name multiline-ellipsis">
+                          Samsung Galaxy A21s...
+                        </div>
 
-                          <div class="rating">
-                            <div class="stars" data-rating="5">
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
+                        <div class="price">
+                          <span> 2,799<sup>,00</sup> TL </span>
+                          <span class="old-price">
+                            2,999<sup>,00</sup> TL
+                          </span>
+                        </div>
+
+                        <div class="rating">
+                          <div class="stars" data-rating="0">
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
                             </div>
                           </div>
                         </div>
-                      </a>
-                    </div>
+                      </div>
+                    </a>
                   </div>
-                  <div
-                    class="owl-item"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/hometech-alfa-intel-celeron-n33504-gb64-gbssd14-hdwin10-?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=215206&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %20
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/alfa-450c-1_w4tha3_500.jpg"
-                            alt=""
-                          />
+                </div>
+                <div class="owl-item" style="width: 166px; margin-right: 10px">
+                  <div class="seg-item">
+                    <a
+                      href="https://www.evkur.com.tr/damla-siyah-masa-sandalye-tk?banner=slider15102020&amp;_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=206876&amp;_sgm_action=click"
+                      class="item"
+                    >
+                      <div class="item-image">
+                        <img
+                          class="owl-lazy"
+                          data-src="https://cdn.evkur.com.tr/c/Product/thumbs/a1_ef0y5m_500.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="item-info">
+                        <div class="name multiline-ellipsis">
+                          Damla Masa Takımı&nbsp;Siyah
                         </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Hometech ALFA-450C Intel Celeron N3350 1.1GHz
-                            İşlemci 4Gb Ram 64Gb Ssd 14" Ekran Windows 10
-                            İşletim Sistemli Gümüş Dizüstü Bilgisayar
-                          </div>
+                        <div class="price">
+                          <span> 1,489<sup>,00</sup> TL </span>
+                        </div>
 
-                          <div class="price">
-                            <span> 2,399<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              2,999<sup>,00</sup> TL
-                            </span>
-                          </div>
-
-                          <div class="rating">
-                            <div class="stars" data-rating="0">
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
+                        <div class="rating">
+                          <div class="stars" data-rating="0">
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
                             </div>
                           </div>
                         </div>
-                      </a>
-                    </div>
+                      </div>
+                    </a>
                   </div>
-                  <div
-                    class="owl-item"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/samsung/samsung-galaxy-a21s-64gb-siyah-akilli-telefon?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=206715&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %6
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/samsung-galaxy-a21s-64gb-cift-sim-siyah1_z0ste7_500.jpeg"
-                            alt=""
-                          />
+                </div>
+                <div class="owl-item" style="width: 166px; margin-right: 10px">
+                  <div class="seg-item">
+                    <a
+                      href="https://www.evkur.com.tr/samsung-galaxy-a31-128gb-siyah-akilli-telefon-a315f?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=206256&amp;_sgm_action=click"
+                      class="item"
+                    >
+                      <div class="item-image">
+                        <div class="discount-info vcenter">
+                          <span>
+                            %16
+                            <br />
+                            İNDİRİM
+                          </span>
                         </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Samsung Galaxy A21s 64GB Siyah Akıllı Telefon
-                            (A217F)
-                          </div>
 
-                          <div class="price">
-                            <span> 2,799<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              2,999<sup>,00</sup> TL
-                            </span>
-                          </div>
+                        <img
+                          class="owl-lazy"
+                          data-src="https://cdn.evkur.com.tr/c/Product/thumbs/galaxy-a31-siyah_as4c3b_500.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="item-info">
+                        <div class="name multiline-ellipsis">
+                          Samsung Galaxy A31...
+                        </div>
 
-                          <div class="rating">
-                            <div class="stars" data-rating="0">
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
+                        <div class="price">
+                          <span> 2,999<sup>,00</sup> TL </span>
+                          <span class="old-price">
+                            3,599<sup>,00</sup> TL
+                          </span>
+                        </div>
+
+                        <div class="rating">
+                          <div class="stars" data-rating="5">
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
                             </div>
                           </div>
                         </div>
-                      </a>
-                    </div>
+                      </div>
+                    </a>
                   </div>
-                  <div
-                    class="owl-item"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/580-m2-ekostar-hali11?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=198398&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/301a8135-1920x1920_f5nte0_500.jpg"
-                            alt=""
-                          />
+                </div>
+                <div class="owl-item" style="width: 166px; margin-right: 10px">
+                  <div class="seg-item">
+                    <a
+                      href="https://www.evkur.com.tr/580-m2-ekostar-hali11?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=198398&amp;_sgm_action=click"
+                      class="item"
+                    >
+                      <div class="item-image">
+                        <img
+                          class="owl-lazy"
+                          data-src="https://cdn.evkur.com.tr/c/Product/thumbs/301a8135-1920x1920_f5nte0_500.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="item-info">
+                        <div class="name multiline-ellipsis">
+                          Merinos 200x290 cm...
                         </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Merinos 200x290 cm Ekostar Halı 32697-30
-                          </div>
-                          <div class="price">
-                            <span> 529<sup>,00</sup> TL </span>
-                          </div>
+                        <div class="price">
+                          <span> 529<sup>,00</sup> TL </span>
+                        </div>
 
-                          <div class="rating">
-                            <div class="stars" data-rating="0">
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
+                        <div class="rating">
+                          <div class="stars" data-rating="0">
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
                             </div>
                           </div>
                         </div>
-                      </a>
-                    </div>
+                      </div>
+                    </a>
                   </div>
-                  <div
-                    class="owl-item"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/realme-6-128gb-yildiz-beyazi-akilli-telefon?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=206001&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %14
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/realme-6-yildiz-beyazi_z9y1fk_500.jpg"
-                            alt=""
-                          />
+                </div>
+                <div class="owl-item" style="width: 166px; margin-right: 10px">
+                  <div class="seg-item">
+                    <a
+                      href="https://www.evkur.com.tr/oppo-a52-464gb-black?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=213726&amp;_sgm_action=click"
+                      class="item"
+                    >
+                      <div class="item-image">
+                        <div class="discount-info vcenter">
+                          <span>
+                            %10
+                            <br />
+                            İNDİRİM
+                          </span>
                         </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Realme 6 128GB Yıldız Beyazı Akıllı Telefon
-                          </div>
 
-                          <div class="price">
-                            <span> 2,999<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              3,499<sup>,00</sup> TL
-                            </span>
-                          </div>
+                        <img
+                          class="owl-lazy"
+                          data-src="https://cdn.evkur.com.tr/c/Product/thumbs/a52-siyah1_g7qtd4_f7kag4_t2ekd6_500.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="item-info">
+                        <div class="name multiline-ellipsis">
+                          Oppo A52 4/64GB Siyah...
+                        </div>
 
-                          <div class="rating">
-                            <div class="stars" data-rating="5">
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
+                        <div class="price">
+                          <span> 2,689<sup>,00</sup> TL </span>
+                          <span class="old-price">
+                            2,999<sup>,00</sup> TL
+                          </span>
+                        </div>
+
+                        <div class="rating">
+                          <div class="stars" data-rating="0">
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
                             </div>
                           </div>
                         </div>
-                      </a>
-                    </div>
+                      </div>
+                    </a>
                   </div>
-                  <div
-                    class="owl-item"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/368-m2-praga-hali4?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=198328&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %50
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/19084-012-praga-1920x1920_b7rqj1_500.jpg"
-                            alt=""
-                          />
+                </div>
+                <div class="owl-item" style="width: 166px; margin-right: 10px">
+                  <div class="seg-item">
+                    <a
+                      href="https://www.evkur.com.tr/new-vizyon-deluks-takim-?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=168420&amp;_sgm_action=click"
+                      class="item"
+                    >
+                      <div class="item-image">
+                        <img
+                          class="owl-lazy"
+                          data-src="https://cdn.evkur.com.tr/c/Product/thumbs/aa_c5k9nr_500.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="item-info">
+                        <div class="name multiline-ellipsis">
+                          New Vizyon Deluks Koltuk...
                         </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Merinos Elegance 160x230 cm Praga Halı 19084-12
-                          </div>
+                        <div class="price">
+                          <span> 6,749<sup>,00</sup> TL </span>
+                        </div>
 
-                          <div class="price">
-                            <span> 1,030<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              2,060<sup>,00</sup> TL
-                            </span>
-                          </div>
-
-                          <div class="rating">
-                            <div class="stars" data-rating="0">
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
+                        <div class="rating">
+                          <div class="stars" data-rating="5">
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
                             </div>
                           </div>
                         </div>
-                      </a>
-                    </div>
+                      </div>
+                    </a>
                   </div>
-                  <div
-                    class="owl-item cloned"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/trident-a23-max-64gb-mavi-akilli-telefon?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=214262&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %8
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/trident-a23-blue_k4t3hb_y3k9em_500.jpg"
-                            alt=""
-                            src="https://cdn.evkur.com.tr/c/Product/thumbs/trident-a23-blue_k4t3hb_y3k9em_500.jpg"
-                            style="opacity: 1"
-                          />
+                </div>
+                <div
+                  class="owl-item cloned"
+                  style="width: 166px; margin-right: 10px"
+                >
+                  <div class="seg-item">
+                    <a
+                      href="https://www.evkur.com.tr/trident-a23-max-64gb-mavi-akilli-telefon?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=214262&amp;_sgm_action=click"
+                      class="item"
+                    >
+                      <div class="item-image">
+                        <div class="discount-info vcenter">
+                          <span>
+                            %8
+                            <br />
+                            İNDİRİM
+                          </span>
                         </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Trident A23 Max 64GB Mavi Akıllı Telefon
-                          </div>
 
-                          <div class="price">
-                            <span> 2,099<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              2,299<sup>,00</sup> TL
-                            </span>
-                          </div>
+                        <img
+                          class="owl-lazy"
+                          data-src="https://cdn.evkur.com.tr/c/Product/thumbs/trident-a23-blue_k4t3hb_y3k9em_500.jpg"
+                          alt=""
+                          src="https://cdn.evkur.com.tr/c/Product/thumbs/trident-a23-blue_k4t3hb_y3k9em_500.jpg"
+                          style="opacity: 1"
+                        />
+                      </div>
+                      <div class="item-info">
+                        <div class="name multiline-ellipsis">
+                          Trident A23 Max 64GB Mavi...
+                        </div>
 
-                          <div class="rating">
-                            <div class="stars" data-rating="0">
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
+                        <div class="price">
+                          <span> 2,099<sup>,00</sup> TL </span>
+                          <span class="old-price">
+                            2,299<sup>,00</sup> TL
+                          </span>
+                        </div>
+
+                        <div class="rating">
+                          <div class="stars" data-rating="0">
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
                             </div>
                           </div>
                         </div>
-                      </a>
-                    </div>
+                      </div>
+                    </a>
                   </div>
-                  <div
-                    class="owl-item cloned"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/408-m2-selectum-hali4?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=199944&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/19042-035-selectum-1920_ed7z9h_500.jpg"
-                            alt=""
-                            src="https://cdn.evkur.com.tr/c/Product/thumbs/19042-035-selectum-1920_ed7z9h_500.jpg"
-                            style="opacity: 1"
-                          />
+                </div>
+                <div
+                  class="owl-item cloned"
+                  style="width: 166px; margin-right: 10px"
+                >
+                  <div class="seg-item">
+                    <a
+                      href="https://www.evkur.com.tr/408-m2-selectum-hali4?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=199944&amp;_sgm_action=click"
+                      class="item"
+                    >
+                      <div class="item-image">
+                        <img
+                          class="owl-lazy"
+                          data-src="https://cdn.evkur.com.tr/c/Product/19042-035-selectum-1920_ed7z9h.jpg"
+                          alt=""
+                          src="https://cdn.evkur.com.tr/c/Product/19042-035-selectum-1920_ed7z9h.jpg"
+                          style="opacity: 1"
+                        />
+                      </div>
+                      <div class="item-info">
+                        <div class="name multiline-ellipsis">
+                          Merinos Elegance...
                         </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Merinos Elegance 170x240 cm Selectum Halı 19042-35
-                          </div>
-                          <div class="price">
-                            <span> 1,142<sup>,00</sup> TL </span>
-                          </div>
+                        <div class="price">
+                          <span> 1,142<sup>,00</sup> TL </span>
+                        </div>
 
-                          <div class="rating">
-                            <div class="stars" data-rating="0">
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
+                        <div class="rating">
+                          <div class="stars" data-rating="0">
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
                             </div>
                           </div>
                         </div>
-                      </a>
-                    </div>
+                      </div>
+                    </a>
                   </div>
-                  <div
-                    class="owl-item cloned"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/samsung-galaxy-a11-32gb-siyah-akilli-telefon-a115f?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=206517&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %10
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/galaxy-a11-siyah_pe2w0f_500.jpg"
-                            alt=""
-                            src="https://cdn.evkur.com.tr/c/Product/thumbs/galaxy-a11-siyah_pe2w0f_500.jpg"
-                            style="opacity: 1"
-                          />
+                </div>
+                <div
+                  class="owl-item cloned"
+                  style="width: 166px; margin-right: 10px"
+                >
+                  <div class="seg-item">
+                    <a
+                      href="https://www.evkur.com.tr/samsung-galaxy-a11-32gb-siyah-akilli-telefon-a115f?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=206517&amp;_sgm_action=click"
+                      class="item"
+                    >
+                      <div class="item-image">
+                        <div class="discount-info vcenter">
+                          <span>
+                            %10
+                            <br />
+                            İNDİRİM
+                          </span>
                         </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Samsung Galaxy A11 32GB Siyah Akıllı Telefon (A115F)
-                          </div>
 
-                          <div class="price">
-                            <span> 2,499<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              2,799<sup>,00</sup> TL
-                            </span>
-                          </div>
+                        <img
+                          class="owl-lazy"
+                          data-src="https://cdn.evkur.com.tr/c/Product/thumbs/galaxy-a11-siyah_pe2w0f_500.jpg"
+                          alt=""
+                          src="https://cdn.evkur.com.tr/c/Product/thumbs/galaxy-a11-siyah_pe2w0f_500.jpg"
+                          style="opacity: 1"
+                        />
+                      </div>
+                      <div class="item-info">
+                        <div class="name multiline-ellipsis">
+                          Samsung Galaxy A11...
+                        </div>
 
-                          <div class="rating">
-                            <div class="stars" data-rating="5">
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
+                        <div class="price">
+                          <span> 2,499<sup>,00</sup> TL </span>
+                          <span class="old-price">
+                            2,799<sup>,00</sup> TL
+                          </span>
+                        </div>
+
+                        <div class="rating">
+                          <div class="stars" data-rating="5">
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
                             </div>
                           </div>
                         </div>
-                      </a>
-                    </div>
+                      </div>
+                    </a>
                   </div>
-                  <div
-                    class="owl-item cloned"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/merinos-elegance-160x230-cm-creante-hali-19143-96?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=198346&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %50
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/19143-096-creante-1920x1920_sy3b9n.jpg"
-                            alt=""
-                            src="https://cdn.evkur.com.tr/c/Product/19143-096-creante-1920x1920_sy3b9n.jpg"
-                            style="opacity: 1"
-                          />
+                </div>
+                <div
+                  class="owl-item cloned"
+                  style="width: 166px; margin-right: 10px"
+                >
+                  <div class="seg-item">
+                    <a
+                      href="https://www.evkur.com.tr/merinos-elegance-160x230-cm-creante-hali-19143-96?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=198346&amp;_sgm_action=click"
+                      class="item"
+                    >
+                      <div class="item-image">
+                        <div class="discount-info vcenter">
+                          <span>
+                            %50
+                            <br />
+                            İNDİRİM
+                          </span>
                         </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Merinos Elegance 160x230 cm Creante Halı 19143-96
-                          </div>
 
-                          <div class="price">
-                            <span> 1,030<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              2,062<sup>,00</sup> TL
-                            </span>
-                          </div>
+                        <img
+                          class="owl-lazy"
+                          data-src="https://cdn.evkur.com.tr/c/Product/19143-096-creante-1920x1920_sy3b9n.jpg"
+                          alt=""
+                          src="https://cdn.evkur.com.tr/c/Product/19143-096-creante-1920x1920_sy3b9n.jpg"
+                          style="opacity: 1"
+                        />
+                      </div>
+                      <div class="item-info">
+                        <div class="name multiline-ellipsis">
+                          Merinos Elegance...
+                        </div>
 
-                          <div class="rating">
-                            <div class="stars" data-rating="0">
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
+                        <div class="price">
+                          <span> 1,030<sup>,00</sup> TL </span>
+                          <span class="old-price">
+                            2,062<sup>,00</sup> TL
+                          </span>
+                        </div>
+
+                        <div class="rating">
+                          <div class="stars" data-rating="0">
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
                             </div>
                           </div>
                         </div>
-                      </a>
-                    </div>
+                      </div>
+                    </a>
                   </div>
-                  <div
-                    class="owl-item cloned"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/trident-a53-pro-128gb-beyaz-akilli-telefon?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=214352&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <div class="discount-info vcenter">
-                            <span>
-                              %10
-                              <br />
-                              İNDİRİM
-                            </span>
-                          </div>
-
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/trident-a53-pro-beyaz_bt89ew_500.jpg"
-                            alt=""
-                            src="https://cdn.evkur.com.tr/c/Product/thumbs/trident-a53-pro-beyaz_bt89ew_500.jpg"
-                            style="opacity: 1"
-                          />
+                </div>
+                <div
+                  class="owl-item cloned"
+                  style="width: 166px; margin-right: 10px"
+                >
+                  <div class="seg-item">
+                    <a
+                      href="https://www.evkur.com.tr/trident-a53-pro-128gb-beyaz-akilli-telefon?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=214352&amp;_sgm_action=click"
+                      class="item"
+                    >
+                      <div class="item-image">
+                        <div class="discount-info vcenter">
+                          <span>
+                            %10
+                            <br />
+                            İNDİRİM
+                          </span>
                         </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            Trident A53 Pro 128GB Beyaz Akıllı Telefon
-                          </div>
 
-                          <div class="price">
-                            <span> 2,699<sup>,00</sup> TL </span>
-                            <span class="old-price">
-                              2,999<sup>,00</sup> TL
-                            </span>
-                          </div>
+                        <img
+                          class="owl-lazy"
+                          data-src="https://cdn.evkur.com.tr/c/Product/thumbs/trident-a53-pro-beyaz_bt89ew_500.jpg"
+                          alt=""
+                          src="https://cdn.evkur.com.tr/c/Product/thumbs/trident-a53-pro-beyaz_bt89ew_500.jpg"
+                          style="opacity: 1"
+                        />
+                      </div>
+                      <div class="item-info">
+                        <div class="name multiline-ellipsis">
+                          Trident A53 Pro 128GB Beyaz...
+                        </div>
 
-                          <div class="rating">
-                            <div class="stars" data-rating="0">
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
+                        <div class="price">
+                          <span> 2,699<sup>,00</sup> TL </span>
+                          <span class="old-price">
+                            2,999<sup>,00</sup> TL
+                          </span>
+                        </div>
+
+                        <div class="rating">
+                          <div class="stars" data-rating="5">
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star active">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
                             </div>
                           </div>
                         </div>
-                      </a>
-                    </div>
+                      </div>
+                    </a>
                   </div>
-                  <div
-                    class="owl-item cloned"
-                    style="width: 166px; margin-right: 10px"
-                  >
-                    <div class="seg-item">
-                      <a
-                        href="https://www.evkur.com.tr/new-vizyon-deluks-takim-?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=168420&amp;_sgm_action=click"
-                        class="item"
-                      >
-                        <div class="item-image">
-                          <img
-                            class="owl-lazy"
-                            data-src="https://cdn.evkur.com.tr/c/Product/thumbs/aa_c5k9nr_500.jpg"
-                            alt=""
-                          />
+                </div>
+                <div
+                  class="owl-item cloned"
+                  style="width: 166px; margin-right: 10px"
+                >
+                  <div class="seg-item">
+                    <a
+                      href="https://www.evkur.com.tr/hometech-alfa-intel-celeron-n33504-gb64-gbssd14-hdwin10-?_sgm_campaign=scn_6bc817d610d40000&amp;_sgm_source=215206&amp;_sgm_action=click"
+                      class="item"
+                    >
+                      <div class="item-image">
+                        <div class="discount-info vcenter">
+                          <span>
+                            %20
+                            <br />
+                            İNDİRİM
+                          </span>
                         </div>
-                        <div class="item-info">
-                          <div class="name multiline-ellipsis">
-                            New Vizyon Deluks Koltuk Takımı
-                          </div>
-                          <div class="price">
-                            <span> 6,749<sup>,00</sup> TL </span>
-                          </div>
 
-                          <div class="rating">
-                            <div class="stars" data-rating="5">
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
-                              <div class="star active">
-                                <img src="/Content/Icons/star-icon.png" />
-                                <img
-                                  class="active"
-                                  src="/Content/Icons/active-star-icon.png"
-                                />
-                              </div>
+                        <img
+                          class="owl-lazy"
+                          data-src="https://cdn.evkur.com.tr/c/Product/thumbs/alfa-450c-1_w4tha3_500.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="item-info">
+                        <div class="name multiline-ellipsis">
+                          Hometech ALFA-450C...
+                        </div>
+
+                        <div class="price">
+                          <span> 2,399<sup>,00</sup> TL </span>
+                          <span class="old-price">
+                            2,999<sup>,00</sup> TL
+                          </span>
+                        </div>
+
+                        <div class="rating">
+                          <div class="stars" data-rating="0">
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
+                            </div>
+                            <div class="star">
+                              <img src="/Content/Icons/star-icon.png" />
+                              <img
+                                class="active"
+                                src="/Content/Icons/active-star-icon.png"
+                              />
                             </div>
                           </div>
                         </div>
-                      </a>
-                    </div>
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>
-              <div class="owl-nav">
-                <button type="button" role="presentation" class="owl-prev">
-                  <i class="fa fa-chevron-left"></i></button
-                ><button type="button" role="presentation" class="owl-next">
-                  <i class="fa fa-chevron-right"></i>
-                </button>
-              </div>
-              <div class="owl-dots">
-                <button role="button" class="owl-dot active">
-                  <span></span></button
-                ><button role="button" class="owl-dot"><span></span></button
-                ><button role="button" class="owl-dot"><span></span></button>
-              </div>
+            </div>
+            <div class="owl-nav">
+              <button type="button" role="presentation" class="owl-prev">
+                <i class="fa fa-chevron-left"></i></button
+              ><button type="button" role="presentation" class="owl-next">
+                <i class="fa fa-chevron-right"></i>
+              </button>
+            </div>
+            <div class="owl-dots">
+              <button role="button" class="owl-dot active"><span></span></button
+              ><button role="button" class="owl-dot"><span></span></button
+              ><button role="button" class="owl-dot"><span></span></button>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
+<script>
+export default {
+  name: 'app',
+  data: () => {
+    return {}
+  },
+  created() {
+    this.$store.dispatch('product/initData')
+  },
+  computed: {
+    products() {
+      return this.$store.getters['product/getProducts']
+    },
+  },
+}
+</script>
 
 
  <style>
@@ -7793,7 +3087,7 @@
 #kategori2 h2 {
   font-size: 20px !important;
   text-transform: uppercase;
-  font-family: "Proxima";
+  font-family: 'Proxima';
   text-align: center;
   color: #555555;
 }
@@ -7840,7 +3134,7 @@
   #kategori2 h2 {
     font-size: 16px !important;
     text-transform: uppercase;
-    font-family: "Proxima";
+    font-family: 'Proxima';
     text-align: center;
     color: #555555;
   }

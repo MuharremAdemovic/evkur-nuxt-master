@@ -5,42 +5,42 @@
         <div class="text">BİZİ TAKİP EDİN!</div>
         <div class="icons">
           <a href="https://www.facebook.com/evkur" class="icon" target="_blank">
-            <img src="../assets/Icons/facebook-icon.png" alt="facebook" />
+            <img src="../static/Icons/facebook-icon.png" alt="facebook" />
           </a>
           <a
             href="https://twitter.com/evkuronline"
             class="icon"
             target="_blank"
           >
-            <img src="../assets/Icons/twitter-icon.png" alt="twitter" />
+            <img src="../static/Icons/twitter-icon.png" alt="twitter" />
           </a>
           <a
             href="https://instagram.com/evkur.com.tr/"
             class="icon"
             target="_blank"
           >
-            <img src="../assets/Icons/instagram-icon.png" alt="instagram" />
+            <img src="../static/Icons/instagram-icon.png" alt="instagram" />
           </a>
           <a
             href="https://www.youtube.com/channel/UCCggnXeXdyz3AUXSf8ghLUw"
             class="icon"
             target="_blank"
           >
-            <img src="../assets/Icons/youtube-icon.png" alt="youtube" />
+            <img src="../static/Icons/youtube-icon.png" alt="youtube" />
           </a>
           <a
             href="https://www.linkedin.com/company/evkur"
             class="icon"
             target="_blank"
           >
-            <img src="../assets/Icons/linkedin-icon.png" alt="linkedin" />
+            <img src="../static/Icons/linkedin-icon.png" alt="linkedin" />
           </a>
           <a
             href="https://www.pinterest.com/evkur/"
             class="icon"
             target="_blank"
           >
-            <img src="../assets/Icons/pinterest-icon.png" alt="pinterest" />
+            <img src="../static/Icons/pinterest-icon.png" alt="pinterest" />
           </a>
         </div>
       </div>

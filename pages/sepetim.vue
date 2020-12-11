@@ -35,8 +35,8 @@
                 class="checkout-option-button checkout-option-button-action vcenter"
               >
                 <div>
-                  <img src="../assets/Icons/payment-option-MoneyTransfer.png" />
-                  
+                  <img src="../static/Icons/payment-option-MoneyTransfer.png" />
+
                   <span> Havale / EFT </span>
                 </div>
               </a>
@@ -51,8 +51,8 @@
                 class="checkout-option-button checkout-option-button-action vcenter"
               >
                 <div>
-                  <img src="../assets/Icons/payment-option-CreditCard.png" />
-                  
+                  <img src="../static/Icons/payment-option-CreditCard.png" />
+
                   <span> Kredi Kartı </span>
                 </div>
               </a>
@@ -67,7 +67,7 @@
                 class="checkout-option-button checkout-option-button-action vcenter"
               >
                 <div>
-                  <img src="../assets/Icons/payment-option-Contract.png" />
+                  <img src="../static/Icons/payment-option-Contract.png" />
                   <span> Taksitli Sözleşme </span>
                 </div>
               </a>
@@ -104,19 +104,19 @@
               <div class="total-price">Toplam Fiyat</div>
               <div class="remove"></div>
             </div>
-            <div class="product">
+            <div v-for="item in basket" :key="'basket'+item.id" class="product">
               <a
-                href="/urun-detay"
+                :href="'/urun-detay/' + item.product.id"
                 class="image"
               >
                 <img
-                  src="https://cdn.evkur.com.tr/c/Product/thumbs/trident-a23-siyah_po6c1y_250.jpg"
+                  :src="item.product.image"
                   alt=""
                 />
               </a>
-              <a href="/urun-detay" class="name">
-                Trident A23 Max 64GB Siyah Akıllı Telefon
-              </a>
+              <nuxt-link :to="'/urun-detay/' + item.product.id" class="name">
+                {{ item.product.title }} ( {{ item.color }} )
+              </nuxt-link>
               <div class="quantity">
                 <form
                   class="validate"
@@ -127,12 +127,12 @@
                     class="product-quantity-selector submit-after-change"
                     data-value="1"
                   >
-                    <a href="javascript:void(0)" class="minus"> - </a>
+                    <a href="javascript:void(0)" @click="decrease(item.id)" class="minus"> - </a>
                     <span>
-                      <span> 1 </span>
+                      <span> {{ item.count }} </span>
                       Adet
                     </span>
-                    <a href="javascript:void(0)" class="plus"> + </a>
+                    <a href="javascript:void(0)" @click="increase(item.id)" class="plus"> + </a>
                     <input
                       type="hidden"
                       value="4188874"
@@ -148,10 +148,10 @@
                   </div>
                 </form>
               </div>
-              <div class="price">2,099<sup>,00</sup> TL</div>
+              <div class="price">{{ item.product.price.toFixed(2) }} TL</div>
               <div class="total-price">
                 <div class="total-price-text mobile">Toplam Fiyat:</div>
-                2,099<sup>,00</sup> TL
+                {{ (item.product.price * item.count).toFixed(2) }} TL
               </div>
               <div class="remove">
                 <form
@@ -167,7 +167,7 @@
                   <input type="hidden" value="0" name="quantity" />
                   <input type="hidden" value="1" name="languageId" />
                   <a
-                    href="javascript:void(0)"
+                    href="javascript:void(0)" @click="removeBasketItem(item.id)"
                     class="remove-button shopping-cart-remove-item-submit-button"
                   >
                     <span> x </span>
@@ -185,7 +185,7 @@
                     href="/ana-sayfa"
                     class="button with-border with-back-arrow"
                   >
-                    <img src="../assets/Icons/grey-button-back-arrow-icon.png" />
+                    <img src="../static/Icons/grey-button-back-arrow-icon.png" />
                     <span> Alışverişe Devam </span>
                   </a>
                 </div>
@@ -198,7 +198,7 @@
                 <div class="cart-summary-items">
                   <div class="cart-summary-item">
                     <div class="name">Ara Toplam:</div>
-                    <div class="value">2,099<sup>,00</sup> TL</div>
+                    <div class="value">{{ subtotal }} TL</div>
                   </div>
                   <div class="cart-summary-item">
                     <div class="name">Nakliye:</div>
@@ -206,7 +206,7 @@
                   </div>
                   <div class="cart-summary-item total">
                     <div class="name">Toplam:</div>
-                    <div class="value">2,099<sup>,00</sup> TL</div>
+                    <div class="value">{{ total }} TL</div>
                   </div>
                 </div>
                 <div class="next-step">
@@ -229,11 +229,55 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
       />
-      
+
     </div>
-    
+
   </div>
 </template>
+
+<script>
+
+export default {
+  data: () => {
+    return {
+
+    };
+  },
+  created() {
+
+  },
+  computed: {
+    basket(){
+      return this.$store.getters['basket/getBasketItems'];
+    },
+    subtotal(){
+      let total = 0;
+      for (let i = 0; i < this.basket.length; i++) {
+        total += this.basket[i].product.price;
+      }
+      return total.toFixed(2);
+    },
+    total() {
+      let total = 0;
+      for (let i = 0; i < this.basket.length; i++) {
+        total += (this.basket[i].product.price * this.basket[i].count);
+      }
+      return total.toFixed(2);
+    }
+  },
+  methods: {
+    removeBasketItem(id){
+      this.$store.dispatch('basket/removeBasketItem', id);
+    },
+    increase(id){
+      this.$store.dispatch('basket/increaseBasketItem', id);
+    },
+    decrease(id){
+      this.$store.dispatch("basket/decreaseBasketItem", id);
+    }
+  }
+}
+</script>
 
 <style>
 #basket .item-info {

@@ -4,11 +4,11 @@
       <span></span>
     </a>
     <div class="logo">
-      <a href="/" title="Evkur">
+      <nuxt-link to="/" title="Evkur">
         <h1>
           <img src="../assets/logo.png" alt="Evkur" />
         </h1>
-      </a>
+      </nuxt-link>
     </div>
     <div class="search">
       <form
@@ -139,7 +139,7 @@
                         data-is-changing="true"
                         goal-name="tv click"
                       >
-                       
+
                       </div>
                     </div>
                   </li>
@@ -165,7 +165,7 @@
                         data-is-changing="true"
                         goal-name="k.ev-alet click"
                       >
-                        
+
                       </div>
                     </div>
                   </li>
@@ -191,7 +191,7 @@
                         data-is-changing="true"
                         goal-name="mobilya click"
                       >
-                       
+
                       </div>
                     </div>
                   </li>
@@ -205,18 +205,46 @@
       </form>
     </div>
     <div class="buttons ins-header-button-wrapper-c122">
-      <a href="/uye-girisi" class="button with-border with-icon">
+      <nuxt-link to="/uye-girisi" class="button with-border with-icon">
         <img src="../assets/user-icon.png" />
         <span>GİRİŞ YAP / ÜYE OL</span>
-      </a>
+      </nuxt-link>
 
-      <a
-        href="/sepetim"
+      <nuxt-link
+        to="/sepetim"
         class="button red with-icon mini-shopping-cart sp-goal-332-c94-67-1584621197735"
       >
         <img class="desktop" src="../assets/shopping-cart-icon.png" />
-        <span>SEPETİM</span>
-      </a>
+        <span>SEPETİM {{ totalBasketItemCount > 0 ? "("+totalBasketItemCount+")" : "" }}</span>
+      </nuxt-link>
     </div>
   </div>
 </template>
+
+<script>
+
+export default {
+  data: () => {
+    return {
+
+    };
+  },
+  created() {
+
+  },
+  computed: {
+    basket(){
+      return this.$store.getters['basket/getBasketItems'];
+    },
+    totalBasketItemCount(){
+      let count = 0;
+      for (let i = 0; i< this.basket.length; i++) {
+        count += this.basket[i].count;
+      }
+      return count;
+    }
+  },
+  methods: {
+  }
+}
+</script>
