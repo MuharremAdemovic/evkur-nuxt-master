@@ -1,38 +1,38 @@
-const data = require("@/data/products.json");
+const data = require("firebaseConfig");
 
 export const state = () => ({
-  isInitialized: false,
-  products: [],
-  product: null
+    isInitialized: false,
+    products: [],
+    product: null
 });
 export const mutations = {
-  setProducts(state, param){
-    state.products = param;
-  },
-  setProduct(state, product){
-    state.product = product;
-  }
+    setProducts(state, param) {
+        state.products = param;
+    },
+    setProduct(state, product) {
+        state.product = product;
+    }
 };
 export const actions = {
-  initData({ state,commit }, ) {
-    if (state.isInitialized === false) {
-      commit("setProducts", data);
-      state.isInitialized = true;
+    initData({ state, commit }, ) {
+        if (state.isInitialized === false) {
+            commit("setProducts", data);
+            state.isInitialized = true;
+        }
+    },
+    setProduct({ state, commit }, id) {
+        for (let i = 0; i < state.products.length; i++) {
+            if (state.products[i].id === id) {
+                commit("setProduct", state.products[i]);
+            }
+        }
     }
-  },
-  setProduct({state,commit}, id){
-    for (let i = 0; i < state.products.length; i++){
-      if(state.products[i].id === id) {
-        commit("setProduct", state.products[i]);
-      }
-    }
-  }
 };
 export const getters = {
-  getProducts(state){
-    return state.products;
-  },
-  getProduct(state){
-    return state.product;
-  }
+    getProducts(state) {
+        return state.products;
+    },
+    getProduct(state) {
+        return state.product;
+    }
 };

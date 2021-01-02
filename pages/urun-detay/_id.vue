@@ -1103,4 +1103,8 @@ export default {
     }
   }
 }
+ // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
 </script>
+

@@ -17,6 +17,8 @@ import Musteri from "@/components/Musteri"
 import AppBar from "@/components/AppBar"
 import BottomBar from "@/components/BottomBar"
 
+
+
 export default {
   components:{
     TheNavbar,
@@ -26,7 +28,9 @@ export default {
     BottomBar,
   
   }
+  
 
 }
+
 </script>
 
